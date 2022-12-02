@@ -44,14 +44,20 @@
   <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="Staging/91.0">
     <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="red" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="off" C417="green" R283A="off" R283B="green" RES_MED="red" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="red" ADV_SLO="green" R288="yellow" R292="red" R291="red" />
   </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="SIG/Staging/UpYardAccept">
+    <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="green" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="green" C417="green" R283A="green" R283B="green" RES_MED="green" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="green" ADV_SLO="green" R288="yellow" R292="red" R291="red" />
+  </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="2" TEMPLATENAME="Standard-2">
+    <ASPECTMAP R281="green|red" R281B="green|red" R282="yellow|yellow" R284="yellow|yellow" RES_NORM="flashing red|red" ADV_NORM="yellow|yellow" R285="yellow|red" R281C="green|red" C412="green|red" C413="yellow|yellow" C414="yellow|yellow" RES_LIM="red|flashing red" ADV_LIM="yellow|yellow" R281D="yellow|red" R283="red|green" C417="red|green" R283A="red|green" R283B="red|green" RES_MED="red|flashing red" ADV_MED="red|green" R286="red|yellow" R287="red|green" C422="red|green" C423="red|green" C424="red|green" RES_SLO="red|flashing red" ADV_SLO="red|green" R288="red|yellow" R292="red|red" R291="red|red" />
+  </SIGNALTEMPLATE>
   <TRAINSTORE>
     <TRAINEDIT>
-      <EDITRECORD FIELD_KEY="TRAIN_NAME" FIELD_VISIBLE="true" FIELDLABEL="TRAIN_NAME" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="126" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
-      <EDITRECORD FIELD_KEY="TRAIN_SYMBOL" FIELD_VISIBLE="true" FIELDLABEL="TRAIN_SYMBOL" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="76" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
-      <EDITRECORD FIELD_KEY="ENGINE" FIELD_VISIBLE="true" FIELDLABEL="ENGINE" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="51" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
+      <EDITRECORD FIELD_KEY="TRAIN_NAME" FIELD_VISIBLE="true" FIELDLABEL="TRAIN_NAME" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="127" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
+      <EDITRECORD FIELD_KEY="TRAIN_SYMBOL" FIELD_VISIBLE="true" FIELDLABEL="TRAIN_SYMBOL" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="77" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
+      <EDITRECORD FIELD_KEY="ENGINE" FIELD_VISIBLE="true" FIELDLABEL="ENGINE" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="52" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
       <EDITRECORD FIELD_KEY="TRANSPONDING" FIELD_VISIBLE="false" FIELDLABEL="TRANSPONDING" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="75" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
-      <EDITRECORD FIELD_KEY="CABOOSE" FIELD_VISIBLE="true" FIELDLABEL="CABOOSE" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="52" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
-      <EDITRECORD FIELD_KEY="CREW" FIELD_VISIBLE="true" FIELDLABEL="CREW" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="76" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="ExtraList" />
+      <EDITRECORD FIELD_KEY="CABOOSE" FIELD_VISIBLE="true" FIELDLABEL="CABOOSE" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="54" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
+      <EDITRECORD FIELD_KEY="CREW" FIELD_VISIBLE="true" FIELDLABEL="CREW" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="77" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="ExtraList" />
       <EDITRECORD FIELD_KEY="ONDUTY" FIELD_VISIBLE="false" FIELDLABEL="ONDUTY" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="50" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="TimeSpec" />
       <EDITRECORD FIELD_KEY="DEPARTURE" FIELD_VISIBLE="false" FIELDLABEL="DEPARTURE" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="50" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="TimeSpec" />
       <EDITRECORD FIELD_KEY="FONT" FIELD_VISIBLE="false" FIELDLABEL="FONT" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="75" ALIGNMENT="CENTER" FIELD_DEFAULT="FONT_LABEL" FIELD_CLASS="FontSpec" />
@@ -61,9 +67,6 @@
       <EDITRECORD FIELD_KEY="AUTOTERMINATE" FIELD_VISIBLE="false" FIELDLABEL="AUTOTERMINATE" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="50" ALIGNMENT="CENTER" FIELD_DEFAULT="false" FIELD_CLASS="Boolean" />
       <EDITRECORD FIELD_KEY="LABELBACKGROUND" FIELD_VISIBLE="false" FIELDLABEL="LABELBACKGROUND" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="50" ALIGNMENT="CENTER" FIELD_DEFAULT="false" FIELD_CLASS="Boolean" />
     </TRAINEDIT>
-    <TRAINDATA>
-      <DATARECORD TRAIN_NAME="9S92" TRAIN_SYMBOL="9S92" ENGINE="" TRANSPONDING="" CABOOSE="" CREW="" ONDUTY="" DEPARTURE="" FONT="FONT_LABEL" LENGTH="0" WEIGHT="0" CARS="0" AUTOTERMINATE="false" LABELBACKGROUND="false" />
-    </TRAINDATA>
   </TRAINSTORE>
   <JOBSTORE>
     <JOBEDIT>
@@ -122,6 +125,7 @@
   <COLORDEFINITION COLORKEY="SLOWSPEED" COLORNAME="Slow Speed" COLORTAG="-14336" />
   <COLORDEFINITION COLORKEY="f0" COLORNAME="Panel Elements" COLORTAG="-470875" />
   <COLORDEFINITION COLORKEY="f1" COLORNAME="Signal Text" COLORTAG="-1" />
+  <TRAINSTATLABEL />
   <FASTCLOCK />
   <TEEMAST />
   <COMPRESSIONTAG />
@@ -142,40 +146,54 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Staging/Down Track 1" STATION="Staging/Down Track 1" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 1">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 1">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="4" Y="3">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Down Track 1" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Staging/Down Yard Ladder" STATION="Staging/Down Yard Ladder" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack1">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Yard Ladder">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack1">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Yard Ladder">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
+        <SECSIGNAL>
+          SIG/Staging/Down Track 1 Starter
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>
+            Standard
+            <ASPECTTBL>
+              <HEADSTATES>
+                <ASPECTCOMMAND PLABEL="red">
+                  <IOSPEC DECADDR="SIG/Staging/Down Track 1 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 1 Starter-Red">throw</IOSPEC>
+                </ASPECTCOMMAND>
+              </HEADSTATES>
+            </ASPECTTBL>
+          </PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="5" Y="3">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Down Yard Ladder" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownYardLadder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownYardLadder">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownYardLadder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownYardLadder">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="6" Y="3">
       <TRACKGROUP>
@@ -209,24 +227,40 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Staging/Down Track 2" STATION="Staging/Down Track 2" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 2">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 2">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="5" Y="4">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Down Track 2" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack2">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack2">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+        <SECSIGNAL>
+          SIG/Staging/Down Track 2 Starter
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>
+            Standard
+            <ASPECTTBL>
+              <HEADSTATES>
+                <ASPECTCOMMAND PLABEL="red">
+                  <IOSPEC DECADDR="SIG/Staging/Down Track 2 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 2 Starter-Red">throw</IOSPEC>
+                </ASPECTCOMMAND>
+              </HEADSTATES>
+            </ASPECTTBL>
+          </PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="6" Y="4">
       <TRACKGROUP>
@@ -237,19 +271,17 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_down_yard03" JMRIPREFIX="MT" USER_NAME="sta_down_yard03">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 2">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_down_yard03" JMRIPREFIX="MT" USER_NAME="sta_down_yard03">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 2">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
     <SECTION X="7" Y="4">
@@ -285,24 +317,40 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Staging/Down Track 3" STATION="Staging/Down Track 3" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 3">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 3">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="6" Y="5">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Down Track 3" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack3">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack3">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+        <SECSIGNAL>
+          SIG/Staging/Down Track 3 Starter
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>
+            Standard
+            <ASPECTTBL>
+              <HEADSTATES>
+                <ASPECTCOMMAND PLABEL="red">
+                  <IOSPEC DECADDR="SIG/Staging/Down Track 3 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 3 Starter-Red">throw</IOSPEC>
+                </ASPECTCOMMAND>
+              </HEADSTATES>
+            </ASPECTTBL>
+          </PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="7" Y="5">
       <TRACKGROUP>
@@ -313,19 +361,17 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_down_yard02" JMRIPREFIX="MT" USER_NAME="sta_down_yard02">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 3">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_down_yard02" JMRIPREFIX="MT" USER_NAME="sta_down_yard02">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 3">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
     <SECTION X="8" Y="5">
@@ -368,24 +414,40 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Staging/Down Track 4" STATION="Staging/Down Track 4" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 4">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 4">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="7" Y="6">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Down Track 4" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack4">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownTrack4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownTrack4">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+        <SECSIGNAL>
+          SIG/Staging/Down Track 4 Starter
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>
+            Standard
+            <ASPECTTBL>
+              <HEADSTATES>
+                <ASPECTCOMMAND PLABEL="red">
+                  <IOSPEC DECADDR="SIG/Staging/Down Track 4 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 4 Starter-Red">throw</IOSPEC>
+                </ASPECTCOMMAND>
+              </HEADSTATES>
+            </ASPECTTBL>
+          </PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="8" Y="6">
       <TRACKGROUP>
@@ -396,28 +458,24 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_down_yard01" JMRIPREFIX="MT" USER_NAME="sta_down_yard01">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 4">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_down_yard01" JMRIPREFIX="MT" USER_NAME="sta_down_yard01">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 4">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
     <SECTION X="9" Y="6">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="10" Y="6">
@@ -425,16 +483,7 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Down Yard Approach" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownYardApproach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownYardApproach">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownYardApproach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownYardApproach">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="11" Y="6">
       <TRACKGROUP>
@@ -465,16 +514,20 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Down Main" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Down Main" STATION="Staging/Down Main" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownMain" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownMain">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Main">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/DownMain" JMRIPREFIX="MT" USER_NAME="SEN/Staging/DownMain">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Main">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
+        <SECSIGNAL>
+          StagingDownApproach
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>Standard</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
-      <SEC_NAME LOC_NAME="UPLEFT" NAME="Down Main" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="15" Y="6">
       <TRACKGROUP>
@@ -482,6 +535,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPLEFT" NAME="Down Main" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="16" Y="6">
       <TRACKGROUP>
@@ -505,14 +559,28 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Balloon Loop XOver" STATION="Staging" DISCIPLINE="APB-2" VISIBLE="true">
+        <BLOCK NAME="Staging/Balloon Loop XOver" STATION="Staging/Balloon Loop XOver" DISCIPLINE="APB-2" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/BalloonLoopXOver" JMRIPREFIX="MT" USER_NAME="SEN/Staging/BalloonLoopXOver">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Balloon Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Balloon Loop XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/BalloonLoopXOver" JMRIPREFIX="MT" USER_NAME="SEN/Staging/BalloonLoopXOver">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Balloon Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Balloon Loop XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
+        <SECSIGNAL>
+          Staging/Down Main Starter
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>
+            Standard
+            <ASPECTTBL>
+              <HEADSTATES>
+                <ASPECTCOMMAND PLABEL="red">
+                  <IOSPEC DECADDR="SIG/Staging/Down Main Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Main Starter-Red">throw</IOSPEC>
+                </ASPECTCOMMAND>
+              </HEADSTATES>
+            </ASPECTTBL>
+          </PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="19" Y="6">
@@ -522,14 +590,11 @@
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="23" Y="6">
-      <SEC_NAME LOC_NAME="LOWCENT" NAME="42.5" FONT_NAME="FONT_LABEL" />
+    <SECTION X="27" Y="6">
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="42.7" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="29" Y="6">
       <BUTTON PRIMARY="" ALTERNATE="" DELAY="0" STATUS="false" FIT_TO_GRID="true" />
-    </SECTION>
-    <SECTION X="30" Y="6">
-      <SEC_NAME LOC_NAME="LOWCENT" NAME="42.7" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="32" Y="6">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="42.28" FONT_NAME="FONT_LABEL" />
@@ -581,17 +646,14 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Up Track 4" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Track 4" STATION="Staging/Up Track 4" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack4">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 4">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack4">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 4">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          <PHYSIGNAL>Standard</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -604,24 +666,24 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_up_yard01" JMRIPREFIX="MT" USER_NAME="sta_up_yard01">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 4">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_up_yard01" JMRIPREFIX="MT" USER_NAME="sta_up_yard01">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 4">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Yard Ladder" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Yard Ladder" STATION="Staging/Up Yard Ladder" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpYardLadder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpYardLadder">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Ladder">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpYardLadder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpYardLadder">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Ladder">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -632,6 +694,20 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
+        <SECSIGNAL>
+          Staging/UpYardAccept
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>
+            SIG/Staging/UpYardAccept
+            <ASPECTTBL>
+              <HEADSTATES>
+                <ASPECTCOMMAND PLABEL="red">
+                  <IOSPEC DECADDR="SIG/Staging/Up Yard Accept-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Up Yard Accept-Red">throw</IOSPEC>
+                </ASPECTCOMMAND>
+              </HEADSTATES>
+            </ASPECTTBL>
+          </PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -641,12 +717,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Yard Approach" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Yard Approach" STATION="Staging/Up Yard Approach" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpYardApproach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpYardApproach">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Yard Approach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Approach">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpYardApproach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpYardApproach">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Yard Approach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Approach">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -672,6 +748,7 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>Standard</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
@@ -683,16 +760,15 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Main" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Main" STATION="Staging/Up Main" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpMain" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpMain">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Main">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpMain" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpMain">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Main">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
-      <SEC_NAME LOC_NAME="LOWLEFT" NAME="Up Main" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="15" Y="7">
       <TRACKGROUP>
@@ -700,6 +776,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWLEFT" NAME="Up Main" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="16" Y="7">
       <TRACKGROUP>
@@ -735,12 +812,12 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_balloon_loop_xover" JMRIPREFIX="MT" USER_NAME="sta_balloon_loop_xover">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Balloon Loop" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Balloon Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_balloon_loop_xover" JMRIPREFIX="MT" USER_NAME="sta_balloon_loop_xover">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Balloon Loop" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Balloon Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -768,29 +845,6 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
-        <SECSIGNAL>
-          91.0
-          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            Staging/91.0
-            <ASPECTTBL>
-              <HEADSTATES>
-                <ASPECTCOMMAND PLABEL="green">
-                  <IOSPEC DECADDR="SIG/Staging/91.0/Green" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/91.0/Green">throw</IOSPEC>
-                </ASPECTCOMMAND>
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/91.0/Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/91.0/Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-                <ASPECTCOMMAND PLABEL="yellow">
-                  <IOSPEC DECADDR="SIG/Staging/91.0/Yellow" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/91.0/Yellow">throw</IOSPEC>
-                </ASPECTCOMMAND>
-                <ASPECTCOMMAND PLABEL="off">
-                  <IOSPEC DECADDR="SIG/Staging/91.0-Off" JMRIPREFIX="MT" USER_NAME="SIG/Staging/91.0-Off">close</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -800,19 +854,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Approach" STATION="Eloura Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Up Approach" STATION="Eloura Junction/Up Approach" DISCIPLINE="APB-2" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpApproach" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpApproach">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Approach">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpApproach" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpApproach">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Approach">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          42.5
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="24" Y="7">
@@ -835,6 +884,11 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
+        <SECSIGNAL>
+          91.0
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>Staging/91.0</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -844,14 +898,19 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Gate" STATION="Eloura Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Up Gate" STATION="Eloura Junction/Up Gate" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpGate" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpGate">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Gate" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Gate">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpGate" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpGate">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Gate" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Gate">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
+        <SECSIGNAL>
+          42.7
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>Standard</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="28" Y="7">
@@ -876,19 +935,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Main XOver" STATION="Kemira Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Up Main XOver" STATION="Eloura Junction/Up Main XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpMainXOver" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpMainXOver">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Main XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpMainXOver" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpMainXOver">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Main XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          42.7
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="31" Y="7">
@@ -904,12 +958,12 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="/SWI/ElouraJunction/51/Points" JMRIPREFIX="MT" USER_NAME="SWI/ElouraJunction/51">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Eloura Junction/51" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/51">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="BOTTOM">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="/SWI/ElouraJunction/51" JMRIPREFIX="MT" USER_NAME="SWI/ElouraJunction/51">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Eloura Junction/51" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/51">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -923,8 +977,8 @@
         <BLOCK />
         <SECSIGNAL>
           42.28
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
+          <PHYSIGNAL>Standard-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -935,12 +989,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Main" STATION="Kemira Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Main" STATION="Eloura Junction/Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="KJN-Main" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/Main">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Main" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Main">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/Main" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/Main">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Main" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Main">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -969,12 +1023,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Down XOver" STATION="Kemira Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Down XOver" STATION="Eloura Junction/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/DownXOver" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/DownXOver">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/DownXOver" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/DownXOver">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1017,12 +1071,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Down Approach" STATION="Kemira Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Down Approach" STATION="Eloura Junction/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/DownApproach" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/DownApproach">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/DownApproach" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/DownApproach">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1082,17 +1136,14 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Up Track 3" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Track 3" STATION="Staging/Up Track 3" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack3">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 3">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack3">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 3">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          <PHYSIGNAL>Standard</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -1105,12 +1156,12 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_up_yard02" JMRIPREFIX="MT" USER_NAME="sta_up_yard02">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 3">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_up_yard02" JMRIPREFIX="MT" USER_NAME="sta_up_yard02">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 3">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1127,7 +1178,7 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="22" Y="8">
+    <SECTION X="26" Y="8">
       <SEC_NAME LOC_NAME="UPCENT" NAME="91.0" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="30" Y="8">
@@ -1135,12 +1186,12 @@
         <TRACK>LOWERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Colliery Branch" STATION="Kemira Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Colliery Branch" STATION="Eloura Junction/Colliery Branch" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/CollieryBranch" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/CollieryBranch">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Colliery Branch" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Colliery Branch">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/CollieryBranch" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/CollieryBranch">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Colliery Branch" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/CollieryBranch">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1157,12 +1208,12 @@
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Up Loop XOver" STATION="Kemira Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Up Loop XOver" STATION="Eloura Junction/Up Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpLoopXOver" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpLoopXOver">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Loop XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/ElouraJunction/UpLoopXOver" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/UpLoopXOver">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Up Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Loop XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1178,8 +1229,8 @@
         <BLOCK />
         <SECSIGNAL>
           42.26
-          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
+          <PHYSIGNAL>Standard-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1190,12 +1241,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Loop" STATION="Eloura Junction" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Loop" STATION="Eloura Junction/Loop" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="KJN-Loop" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/Loop">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Loop">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="KJN-Loop" JMRIPREFIX="MT" USER_NAME="SEN/ElouraJunction/Loop">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Loop">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1266,17 +1317,14 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Up Track 2" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Track 2" STATION="Staging/Up Track 2" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack2">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 2">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack2">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 2">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          <PHYSIGNAL>Standard</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -1289,12 +1337,12 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_up_yard03" JMRIPREFIX="MT" USER_NAME="sta_up_yard03">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 2">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="sta_up_yard03" JMRIPREFIX="MT" USER_NAME="sta_up_yard03">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 2">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1354,17 +1402,14 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Up Track 1" STATION="Staging" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Staging/Up Track 1" STATION="Staging/Up Track 1" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack1">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 1">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/UpTrack1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/UpTrack1">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Staging/Up Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 1">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          <PHYSIGNAL>Standard</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -1390,7 +1435,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="TOP">
-        <BLOCK NAME="Colliery" STATION="Eloura Junction" DISCIPLINE="Unknown" VISIBLE="true" />
+        <BLOCK NAME="Eloura Junction/Colliery" STATION="Eloura Junction/Colliery" DISCIPLINE="Unknown" VISIBLE="true" />
       </SEC_EDGE>
     </SECTION>
     <SECTION X="30" Y="11">
