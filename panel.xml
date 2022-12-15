@@ -184,7 +184,7 @@
           <PHYSIGNAL>
             Standard
             <ASPECTTBL>
-              <HEADSTATES>
+              <HEADSTATES SIGNALHEAD="Staging/Down Track 1 Starter">
                 <ASPECTCOMMAND PLABEL="red">
                   <IOSPEC DECADDR="SIG/Staging/Down Track 1 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 1 Starter-Red">throw</IOSPEC>
                 </ASPECTCOMMAND>
@@ -207,12 +207,6 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT" />
-    </SECTION>
-    <SECTION X="12" Y="3">
-      <SEC_NAME LOC_NAME="UPCENT" NAME="Staging Loop" FONT_NAME="f1" />
-    </SECTION>
-    <SECTION X="34" Y="3">
-      <SEC_NAME LOC_NAME="UPCENT" NAME="Eloura Junction" FONT_NAME="f1" />
     </SECTION>
     <SECTION X="2" Y="4">
       <TRACKGROUP>
@@ -258,7 +252,7 @@
           <PHYSIGNAL>
             Standard
             <ASPECTTBL>
-              <HEADSTATES>
+              <HEADSTATES SIGNALHEAD="Staging/Down Track 2 Starter">
                 <ASPECTCOMMAND PLABEL="red">
                   <IOSPEC DECADDR="SIG/Staging/Down Track 2 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 2 Starter-Red">throw</IOSPEC>
                 </ASPECTCOMMAND>
@@ -296,6 +290,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="12" Y="4">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Staging Loop" FONT_NAME="f1" />
+    </SECTION>
+    <SECTION X="34" Y="4">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Eloura Junction" FONT_NAME="f1" />
     </SECTION>
     <SECTION X="2" Y="5">
       <TRACKGROUP>
@@ -348,7 +348,7 @@
           <PHYSIGNAL>
             Standard
             <ASPECTTBL>
-              <HEADSTATES>
+              <HEADSTATES SIGNALHEAD="Staging/Down Track 3 Starter">
                 <ASPECTCOMMAND PLABEL="red">
                   <IOSPEC DECADDR="SIG/Staging/Down Track 3 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 3 Starter-Red">throw</IOSPEC>
                 </ASPECTCOMMAND>
@@ -445,7 +445,7 @@
           <PHYSIGNAL>
             Standard
             <ASPECTTBL>
-              <HEADSTATES>
+              <HEADSTATES SIGNALHEAD="Staging/Down Track 4 Starter">
                 <ASPECTCOMMAND PLABEL="red">
                   <IOSPEC DECADDR="SIG/Staging/Down Track 4 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 4 Starter-Red">throw</IOSPEC>
                 </ASPECTCOMMAND>
@@ -579,7 +579,7 @@
           <PHYSIGNAL>
             Standard
             <ASPECTTBL>
-              <HEADSTATES>
+              <HEADSTATES SIGNALHEAD="Staging/Down Main Starter">
                 <ASPECTCOMMAND PLABEL="red">
                   <IOSPEC DECADDR="SIG/Staging/Down Main Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Main Starter-Red">throw</IOSPEC>
                 </ASPECTCOMMAND>
@@ -706,7 +706,7 @@
           <PHYSIGNAL>
             SIG/Staging/UpYardAccept
             <ASPECTTBL>
-              <HEADSTATES>
+              <HEADSTATES SIGNALHEAD="Staging/UpYardAccept">
                 <ASPECTCOMMAND PLABEL="red">
                   <IOSPEC DECADDR="SIG/Staging/Up Yard Accept-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Up Yard Accept-Red">throw</IOSPEC>
                 </ASPECTCOMMAND>
@@ -1114,7 +1114,9 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <SHARED X="2" Y="16">LEFT</SHARED>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="2" Y="8">
@@ -1464,6 +1466,623 @@
     </SECTION>
     <SECTION X="30" Y="11">
       <SEC_NAME LOC_NAME="UPCENT" NAME="To Eloura Colliery" FONT_NAME="f2" />
+    </SECTION>
+    <SECTION X="12" Y="13">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Bombo" FONT_NAME="f1" />
+    </SECTION>
+    <SECTION X="28" Y="13">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Kiama" FONT_NAME="f1" />
+    </SECTION>
+    <SECTION X="9" Y="15">
+      <TRACKGROUP>
+        <TRACK>LOWERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="BOTTOM" />
+    </SECTION>
+    <SECTION X="10" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Bombo/Up XOver" STATION="Bombo/Up XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="11" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Bombo/Loop" STATION="Bombo/Loop" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="12" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Loop" FONT_NAME="f3" />
+    </SECTION>
+    <SECTION X="13" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="14" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Bombo/Down XOver" STATION="Bombo/Down XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="15" Y="15">
+      <TRACKGROUP>
+        <TRACK>LOWERBACKSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="BOTTOM" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="37" Y="15">
+      <TRACKGROUP>
+        <TRACK>LOWERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="BOTTOM" />
+    </SECTION>
+    <SECTION X="38" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Kiama/Down Refuge XOver" STATION="Kiama/Down Refuge XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="39" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Down Refuge" STATION="Kiama/Down Refuge" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+      <SEC_NAME LOC_NAME="UPLEFT" NAME="Refuge Siding" FONT_NAME="f3" />
+    </SECTION>
+    <SECTION X="40" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="41" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="2" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <SHARED X="42" Y="7">RIGHT</SHARED>
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="3" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="4" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="5" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="6" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>LOWERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="BOTTOM" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Bombo/Quarry Siding XOver" STATION="Bombo/Quarry Siding XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="7" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="8" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="9" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>UPPERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="TOP" />
+    </SECTION>
+    <SECTION X="10" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="11" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Bombo/Main" STATION="Bombo/Main" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="12" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+      <STATION COLORTAG="f0">LOWCENT</STATION>
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Main" FONT_NAME="f3" />
+    </SECTION>
+    <SECTION X="13" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="14" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="15" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>UPPERBACKSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_EDGE EDGE="TOP" />
+    </SECTION>
+    <SECTION X="16" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="17" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Bombo/Down Approach" STATION="Bombo/Down Approach" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="18" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="19" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="20" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Up Approach" STATION="Kiama/Up Approach" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="21" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="22" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="23" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Up XOver" STATION="Kiama/Up XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="24" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>LOWERBACKSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="BOTTOM" />
+      <SEC_EDGE EDGE="LEFT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="25" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="26" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Main" STATION="Kiama/Main" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="27" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="28" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Main" FONT_NAME="f3" />
+      <STATION COLORTAG="f0">LOWCENT</STATION>
+    </SECTION>
+    <SECTION X="29" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="30" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="31" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Down Main XOver" STATION="Kiama/Down Main XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="32" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>LOWERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="BOTTOM">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="33" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="34" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="35" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="36" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="37" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>UPPERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="TOP" />
+    </SECTION>
+    <SECTION X="38" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="39" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Down Approach" STATION="Kiama/Down Approach" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="40" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="41" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="42" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="3" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="4" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="5" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="6" Y="17">
+      <TRACKGROUP>
+        <TRACK>UPPERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_EDGE EDGE="TOP" />
+    </SECTION>
+    <SECTION X="24" Y="17">
+      <TRACKGROUP>
+        <TRACK>UPPERBACKSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="TOP" />
+    </SECTION>
+    <SECTION X="25" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="26" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Loop" STATION="Kiama/Loop" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="27" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="28" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="Loop" FONT_NAME="f3" />
+      <STATION COLORTAG="f0">UPCENT</STATION>
+    </SECTION>
+    <SECTION X="29" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="30" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="31" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Down Loop XOver" STATION="Kiama/Down Loop XOver" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="32" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+        <TRACK>UPPERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT">
+        <SWITCHPOINTS>
+          <ROUTEINFO ROUTEID="TOP" NORMAL="true" />
+        </SWITCHPOINTS>
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="TOP">
+        <BLOCK />
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="33" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Turntable Siding" STATION="Kiama/Turntable Siding" DISCIPLINE="CTC" VISIBLE="true" />
+      </SEC_EDGE>
+      <SEC_NAME LOC_NAME="LOWLEFT" NAME="Turntable Siding" FONT_NAME="f3" />
+    </SECTION>
+    <SECTION X="34" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="35" Y="17">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="4" Y="18">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Ballast Siding" FONT_NAME="f2" />
     </SECTION>
   </TRACKPLAN>
 </DOCUMENT>
