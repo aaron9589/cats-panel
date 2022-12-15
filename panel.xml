@@ -1482,7 +1482,14 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Bombo/Up XOver" STATION="Bombo/Up XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Bombo/Up XOver" STATION="Bombo/Up XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Up XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Up XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -1492,7 +1499,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Loop" STATION="Bombo/Loop" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Bombo/Loop" STATION="Bombo/Loop" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Loop">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Loop">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="12" Y="15">
@@ -1518,7 +1532,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Down XOver" STATION="Bombo/Down XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Bombo/Down XOver" STATION="Bombo/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="15" Y="15">
@@ -1540,7 +1561,14 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Kiama/Down Refuge XOver" STATION="Kiama/Down Refuge XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Down Refuge XOver" STATION="Kiama/Down Refuge XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Refuge XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Refuge XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -1550,7 +1578,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Refuge" STATION="Kiama/Down Refuge" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Down Refuge" STATION="Kiama/Down Refuge" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Refuge" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Refuge" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
       <SEC_NAME LOC_NAME="UPLEFT" NAME="Refuge Siding" FONT_NAME="f3" />
     </SECTION>
@@ -1612,7 +1647,14 @@
       </SEC_EDGE>
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Quarry Siding XOver" STATION="Bombo/Quarry Siding XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Bombo/Quarry Siding XOver" STATION="Bombo/Quarry Siding XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="7" Y="16">
@@ -1661,7 +1703,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Main" STATION="Bombo/Main" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Bombo/Main" STATION="Bombo/Main" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Main">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Main">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="12" Y="16">
@@ -1719,7 +1768,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Down Approach" STATION="Bombo/Down Approach" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Bombo/Down Approach" STATION="Bombo/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Approach">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Approach">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="18" Y="16">
@@ -1744,7 +1800,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Up Approach" STATION="Kiama/Up Approach" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Up Approach" STATION="Kiama/Up Approach" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Approach">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Approach">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="21" Y="16">
@@ -1769,7 +1832,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Up XOver" STATION="Kiama/Up XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Up XOver" STATION="Kiama/Up XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="24" Y="16">
@@ -1800,7 +1870,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Main" STATION="Kiama/Main" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Main" STATION="Kiama/Main" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Main">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Main">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="27" Y="16">
@@ -1841,7 +1918,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Main XOver" STATION="Kiama/Down Main XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Down Main XOver" STATION="Kiama/Down Main XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Main XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Main XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="32" Y="16">
@@ -1919,7 +2003,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Approach" STATION="Kiama/Down Approach" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Down Approach" STATION="Kiama/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Approach">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Approach">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="40" Y="16">
@@ -1993,7 +2084,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Loop" STATION="Kiama/Loop" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Loop" STATION="Kiama/Loop" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Loop">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Loop">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="27" Y="17">
@@ -2034,7 +2132,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Loop XOver" STATION="Kiama/Down Loop XOver" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Down Loop XOver" STATION="Kiama/Down Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Loop XOver">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Loop XOver">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="32" Y="17">
@@ -2060,7 +2165,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Turntable Siding" STATION="Kiama/Turntable Siding" DISCIPLINE="CTC" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Turntable Siding" STATION="Kiama/Turntable Siding" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Turntable Siding" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Turntable Siding">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Turntable Siding" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Turntable Siding">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
       <SEC_NAME LOC_NAME="LOWLEFT" NAME="Turntable Siding" FONT_NAME="f3" />
     </SECTION>
