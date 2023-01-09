@@ -50,6 +50,9 @@
   <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="2" TEMPLATENAME="Standard-2">
     <ASPECTMAP R281="green|red" R281B="green|red" R282="yellow|yellow" R284="yellow|yellow" RES_NORM="flashing red|red" ADV_NORM="yellow|yellow" R285="yellow|red" R281C="green|red" C412="green|red" C413="yellow|yellow" C414="yellow|yellow" RES_LIM="red|flashing red" ADV_LIM="yellow|yellow" R281D="yellow|red" R283="red|green" C417="red|green" R283A="red|green" R283B="red|green" RES_MED="red|flashing red" ADV_MED="red|green" R286="red|yellow" R287="red|green" C422="red|green" C423="red|green" C424="red|green" RES_SLO="red|flashing red" ADV_SLO="red|green" R288="red|yellow" R292="red|red" R291="red|red" />
   </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="Staging/Down Main Starter">
+    <ASPECTMAP R281="green" R282="green" R284="green" RES_NORM="flashing red" R285="yellow" R283="green" R283A="green" R283B="green" RES_MED="flashing red" R286="yellow" R287="green" C423="green" C424="green" RES_SLO="flashing red" R288="yellow" R292="red" R291="red" />
+  </SIGNALTEMPLATE>
   <TRAINSTORE>
     <TRAINEDIT>
       <EDITRECORD FIELD_KEY="TRAIN_NAME" FIELD_VISIBLE="false" FIELDLABEL="TRAIN_NAME" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="127" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
@@ -577,7 +580,7 @@
           Staging/Down Main Starter
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>
-            Standard
+            Staging/Down Main Starter
             <ASPECTTBL>
               <HEADSTATES SIGNALHEAD="Staging/Down Main Starter">
                 <ASPECTCOMMAND PLABEL="red">
@@ -908,8 +911,8 @@
         </BLOCK>
         <SECSIGNAL>
           42.7
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
+          <PHYSIGNAL>Standard-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -958,12 +961,12 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main">throw</IOSPEC>
+              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="BOTTOM">
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main">close</IOSPEC>
+              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1023,7 +1026,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Down XOver" STATION="Eloura Junction/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="SEN/Eloura Junction/Down XOver" STATION="Eloura Junction/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
             <IOSPEC DECADDR="SEN/Eloura Junction/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
@@ -1064,13 +1067,7 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK />
-        <SECSIGNAL>
-          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Staging/91.0</PHYSIGNAL>
-        </SECSIGNAL>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="39" Y="7">
@@ -1078,22 +1075,20 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Quarry Siding XOver" STATION="Bombo/Quarry Siding XOver" DISCIPLINE="CTC" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="40" Y="7">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+        <SECSIGNAL>
+          41.0
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
+          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+        </SECSIGNAL>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="41" Y="7">
@@ -1101,7 +1096,16 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Eloura Junction/Down Approach" STATION="Eloura Junction/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
     </SECTION>
     <SECTION X="42" Y="7">
       <TRACKGROUP>
@@ -1309,7 +1313,7 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="38" Y="8">
+    <SECTION X="40" Y="8">
       <SEC_NAME LOC_NAME="UPCENT" NAME="42.0" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="2" Y="9">
@@ -1669,12 +1673,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Down Approach" STATION="Eloura Junction/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Bombo/Quarry Siding XOver" STATION="Bombo/Quarry Siding XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
