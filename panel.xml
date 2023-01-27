@@ -51,7 +51,7 @@
     <ASPECTMAP R281="green|red" R281B="green|red" R282="yellow|yellow" R284="yellow|yellow" RES_NORM="flashing red|red" ADV_NORM="yellow|yellow" R285="yellow|red" R281C="green|red" C412="green|red" C413="yellow|yellow" C414="yellow|yellow" RES_LIM="red|flashing red" ADV_LIM="yellow|yellow" R281D="yellow|red" R283="red|green" C417="red|green" R283A="red|green" R283B="red|green" RES_MED="red|flashing red" ADV_MED="red|green" R286="red|yellow" R287="red|green" C422="red|green" C423="red|green" C424="red|green" RES_SLO="red|flashing red" ADV_SLO="red|green" R288="red|yellow" R292="red|red" R291="red|red" />
   </SIGNALTEMPLATE>
   <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="Staging/Down Main Starter">
-    <ASPECTMAP R281="green" R282="green" R284="green" RES_NORM="flashing red" R285="yellow" R283="green" R283A="green" R283B="green" RES_MED="flashing red" R286="yellow" R287="green" C423="green" C424="green" RES_SLO="flashing red" R288="yellow" R292="red" R291="red" />
+    <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="flashing red" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="green" C417="green" R283A="green" R283B="green" RES_MED="flashing red" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="flashing red" ADV_SLO="green" R288="yellow" R292="red" R291="red" />
   </SIGNALTEMPLATE>
   <TRAINSTORE>
     <TRAINEDIT>
@@ -1695,7 +1695,16 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
+          <ROUTEINFO ROUTEID="BOTTOM">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Bombo/Ballast Siding" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Ballast Siding">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Bombo/Ballast Siding" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Ballast Siding">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="BOTTOM" />
@@ -1727,7 +1736,16 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
+          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Bombo/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Up Loop">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="TOP">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Bombo/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Up Loop">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="TOP" />
@@ -1801,7 +1819,16 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
+          <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Bombo/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Down Loop">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="TOP">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Bombo/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Down Loop">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1915,7 +1942,16 @@
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
+          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Up Loop">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="BOTTOM">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Up Loop">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
     </SECTION>
@@ -2009,7 +2045,16 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
+          <ROUTEINFO ROUTEID="BOTTOM">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Loop">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Loop">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="BOTTOM">
@@ -2264,7 +2309,16 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="TOP" NORMAL="true" />
+          <ROUTEINFO ROUTEID="RIGHT">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Turntable Road" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Turntable Road">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="TOP" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Turntable Road" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Turntable Road">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="TOP">
