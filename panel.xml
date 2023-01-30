@@ -599,7 +599,7 @@
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="27" Y="6">
+    <SECTION X="23" Y="6">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="42.7" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="32" Y="6">
@@ -848,6 +848,11 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
+        <SECSIGNAL>
+          91.0
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>Staging/91.0</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -857,7 +862,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Up Approach" STATION="Eloura Junction/Up Approach" DISCIPLINE="APB-2" VISIBLE="true">
+        <BLOCK NAME="Eloura Junction/Up Approach" STATION="Eloura Junction/Up Approach" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
             <IOSPEC DECADDR="SEN/Eloura Junction/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Approach">throw</IOSPEC>
           </OCCUPIEDSPEC>
@@ -865,6 +870,11 @@
             <IOSPEC DECADDR="SEN/Eloura Junction/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Approach">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
+        <SECSIGNAL>
+          42.7
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
+          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="24" Y="7">
@@ -887,11 +897,6 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
-        <SECSIGNAL>
-          91.0
-          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Staging/91.0</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
@@ -909,11 +914,6 @@
             <IOSPEC DECADDR="SEN/Eloura Junction/Up Gate" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Gate">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          42.7
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="28" Y="7">
@@ -922,6 +922,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Swing Gate" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="29" Y="7">
       <TRACKGROUP>
@@ -1192,7 +1193,7 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="26" Y="8">
+    <SECTION X="22" Y="8">
       <SEC_NAME LOC_NAME="UPCENT" NAME="91.0" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="30" Y="8">
@@ -1854,12 +1855,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Down Approach" STATION="Bombo/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Bombo/Down XOver" STATION="Bombo/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Approach">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1886,12 +1887,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Up Approach" STATION="Kiama/Up Approach" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kiama/Up XOver" STATION="Kiama/Up XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Approach">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
