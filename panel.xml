@@ -1498,12 +1498,12 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Bombo/Quarry Siding XOver" STATION="Bombo/Quarry Siding XOver" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Bombo/Up XOvers" STATION="Bombo/Up XOvers" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Up XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Up XOvers">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Quarry Siding XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Quarry Siding XOver">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Up XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Up XOvers">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
