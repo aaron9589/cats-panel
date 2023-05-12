@@ -298,7 +298,7 @@
       <SEC_NAME LOC_NAME="UPCENT" NAME="Staging Loop" FONT_NAME="f1" />
     </SECTION>
     <SECTION X="34" Y="4">
-      <SEC_NAME LOC_NAME="UPCENT" NAME="Eloura Junction" FONT_NAME="f1" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Kembla Junction" FONT_NAME="f1" />
     </SECTION>
     <SECTION X="2" Y="5">
       <TRACKGROUP>
@@ -1466,7 +1466,7 @@
       </SEC_EDGE>
     </SECTION>
     <SECTION X="30" Y="11">
-      <SEC_NAME LOC_NAME="UPCENT" NAME="To Eloura Colliery" FONT_NAME="f2" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="Kembla Heights Branch" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="12" Y="13">
       <SEC_NAME LOC_NAME="UPCENT" NAME="Bombo" FONT_NAME="f1" />
@@ -1596,12 +1596,12 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Kiama/Down Refuge XOver" STATION="Kiama/Down Refuge XOver" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kiama/Down XOvers" STATION="Kiama/Down XOvers" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Refuge XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down XOvers">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Refuge XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge XOver">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down XOvers">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1618,12 +1618,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Refuge" STATION="Kiama/Down Refuge" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kiama/Down Siding" STATION="Kiama/Down Siding" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Refuge" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Siding">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Refuge" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Refuge">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Siding">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1846,10 +1846,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Bombo/Down Main" STATION="Bombo/Down Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -2013,14 +2013,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Main XOver" STATION="Kiama/Down Main XOver" DISCIPLINE="CTC" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Main XOver">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Main XOver">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
+        <BLOCK />
         <SECSIGNAL>
           45.25
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
@@ -2063,9 +2056,7 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="35" Y="16">
@@ -2073,9 +2064,7 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="36" Y="16">
       <TRACKGROUP>
@@ -2092,7 +2081,16 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
         <SWITCHPOINTS>
-          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
+          <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Siding">close</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
+          <ROUTEINFO ROUTEID="TOP">
+            <ROUTECOMMAND>
+              <IOSPEC DECADDR="SWI/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Siding">throw</IOSPEC>
+            </ROUTECOMMAND>
+          </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="TOP" />
