@@ -1922,12 +1922,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Bombo/Down Main" STATION="Bombo/Down Main" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kiama/Up Main" STATION="Kiama/Up Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Main">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Kiama/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Main">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1943,9 +1943,7 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK />
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="20" Y="16">
@@ -1953,16 +1951,7 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Up Main" STATION="Kiama/Up Main" DISCIPLINE="CTC" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Main">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Main">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="21" Y="16">
       <TRACKGROUP>
@@ -2467,7 +2456,6 @@
     <SECTION X="33" Y="18">
       <SEC_NAME LOC_NAME="UPCENT" NAME="45.10" FONT_NAME="FONT_LABEL" />
     </SECTION>
-    <SECTION X="29" Y="20" />
     <SECTION X="29" Y="21">
       <BUTTON PRIMARY="" ALTERNATE="" DELAY="0" STATUS="false" FIT_TO_GRID="false" />
     </SECTION>
