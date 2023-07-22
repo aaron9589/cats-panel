@@ -1924,10 +1924,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Up Main" STATION="Kiama/Up Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Main">throw</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">throw</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up Main">close</IOSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">close</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
