@@ -864,6 +864,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="51" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="21" Y="7">
       <TRACKGROUP>
@@ -978,6 +979,7 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
+      <SEC_NAME LOC_NAME="UPCENT" NAME="51" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="31" Y="7">
       <TRACKGROUP>
@@ -1112,6 +1114,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="53" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="39" Y="7">
       <TRACKGROUP>
@@ -1298,6 +1301,7 @@
       <SEC_EDGE EDGE="TOP">
         <BLOCK />
       </SEC_EDGE>
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="52" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="32" Y="8">
       <TRACKGROUP>
@@ -1635,7 +1639,7 @@
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="23" Y="15">
+    <SECTION X="22" Y="15">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="45.5" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="25" Y="15">
@@ -1687,7 +1691,7 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
-      <SEC_NAME LOC_NAME="UPLEFT" NAME="Refuge Siding" FONT_NAME="f3" />
+      <SEC_NAME LOC_NAME="UPLEFT" NAME="Down Siding" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="40" Y="15">
       <TRACKGROUP>
@@ -1776,6 +1780,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="50" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="8" Y="16">
       <TRACKGROUP>
@@ -1783,6 +1788,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="51" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="9" Y="16">
       <TRACKGROUP>
@@ -1906,38 +1912,39 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK />
-        <SECSIGNAL>
-          44.6
-          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Staging/91.0</PHYSIGNAL>
-        </SECSIGNAL>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="53" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="17" Y="16">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Up Main" STATION="Kiama/Up Main" DISCIPLINE="CTC" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">throw</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">close</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+        <SECSIGNAL>
+          44.6
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
+          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="18" Y="16">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Bombo/Down Main" STATION="Bombo/Down Main" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
     </SECTION>
     <SECTION X="19" Y="16">
       <TRACKGROUP>
@@ -1957,19 +1964,12 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
-    </SECTION>
-    <SECTION X="22" Y="16">
-      <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
-      </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="23" Y="16">
+    <SECTION X="22" Y="16">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1984,11 +1984,18 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
-          45.5
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
           <PHYSIGNAL>Standard-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
+    </SECTION>
+    <SECTION X="23" Y="16">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="51" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="24" Y="16">
       <TRACKGROUP>
@@ -2130,6 +2137,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="53" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="34" Y="16">
       <TRACKGROUP>
@@ -2151,6 +2159,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="UPCENT" NAME="54" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="37" Y="16">
       <TRACKGROUP>
@@ -2281,7 +2290,7 @@
     <SECTION X="14" Y="17">
       <SEC_NAME LOC_NAME="UPCENT" NAME="44.27" FONT_NAME="FONT_LABEL" />
     </SECTION>
-    <SECTION X="16" Y="17">
+    <SECTION X="17" Y="17">
       <SEC_NAME LOC_NAME="UPCENT" NAME="44.6" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="24" Y="17">
@@ -2373,6 +2382,7 @@
           <PHYSIGNAL>Standard-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
+      <SEC_NAME LOC_NAME="UPCENT" NAME="52" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="32" Y="17">
       <TRACKGROUP>
