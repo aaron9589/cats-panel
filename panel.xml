@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DOCUMENT VERSION="2.992" WIDTH="1280" HEIGHT="720" X="0" Y="0">
+<DOCUMENT VERSION="3.0" WIDTH="1280" HEIGHT="720" X="0" Y="0">
   <FONTDEFINITION FONTKEY="FONT_LABEL" FONTNAME="Signal Text" FONTCOLOR="-1" FONTSIZE="10" FONTSTYLE="PLAIN" />
   <FONTDEFINITION FONTKEY="FONT_TRAIN" FONTNAME="Train Identities" FONTCOLOR="-1" FONTSIZE="13" FONTSTYLE="PLAIN" />
   <FONTDEFINITION FONTKEY="ONCALL" FONTNAME="On Call Train" FONTCOLOR="-4144960" FONTSIZE="15" FONTSTYLE="PLAIN" />
@@ -52,6 +52,12 @@
   </SIGNALTEMPLATE>
   <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="Staging/Down Main Starter">
     <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="flashing red" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="green" C417="green" R283A="green" R283B="green" RES_MED="flashing red" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="flashing red" ADV_SLO="green" R288="yellow" R292="red" R291="red" />
+  </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="SM-1">
+    <ASPECTMAP R281="green" R282="green" R284="green" RES_NORM="flashing red" R285="yellow" R283="green" R283A="green" R283B="green" RES_MED="flashing red" R286="yellow" R287="green" C423="green" C424="green" RES_SLO="flashing red" R288="yellow" R292="red" R291="red" />
+  </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="2" TEMPLATENAME="SM-2">
+    <ASPECTMAP R281="green|red" R282="yellow|yellow" R284="yellow|yellow" RES_NORM="flashing red|red" R285="yellow|red" R283="red|green" R283A="red|green" R283B="red|green" RES_MED="red|flashing red" R286="red|yellow" R287="red|green" C423="red|green" C424="red|green" RES_SLO="red|flashing red" R288="red|yellow" R292="red|red" R291="red|red" />
   </SIGNALTEMPLATE>
   <TRAINSTORE>
     <TRAINEDIT>
@@ -193,18 +199,9 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
-          SIG/Staging/Down Track 1 Starter
+          Staging/Down Track 1 Starter
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            Standard
-            <ASPECTTBL>
-              <HEADSTATES SIGNALHEAD="Staging/Down Track 1 Starter">
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/Down Track 1 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 1 Starter-Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
+          <PHYSIGNAL>Staging/Down Main Starter</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -261,18 +258,9 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK />
         <SECSIGNAL>
-          SIG/Staging/Down Track 2 Starter
+          Staging/Down Track 2 Starter
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            Standard
-            <ASPECTTBL>
-              <HEADSTATES SIGNALHEAD="Staging/Down Track 2 Starter">
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/Down Track 2 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 2 Starter-Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
+          <PHYSIGNAL>Staging/Down Main Starter</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -363,18 +351,9 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK />
         <SECSIGNAL>
-          SIG/Staging/Down Track 3 Starter
+          Staging/Down Track 3 Starter
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            Standard
-            <ASPECTTBL>
-              <HEADSTATES SIGNALHEAD="Staging/Down Track 3 Starter">
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/Down Track 3 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 3 Starter-Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
+          <PHYSIGNAL>Staging/Down Main Starter</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -466,18 +445,9 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK />
         <SECSIGNAL>
-          SIG/Staging/Down Track 4 Starter
+          Staging/Down Track 4 Starter
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            Standard
-            <ASPECTTBL>
-              <HEADSTATES SIGNALHEAD="Staging/Down Track 4 Starter">
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/Down Track 4 Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Track 4 Starter-Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
+          <PHYSIGNAL>Staging/Down Main Starter</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -561,9 +531,9 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
-          StagingDownApproach
+          Staging/Down Main
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -608,16 +578,7 @@
         <SECSIGNAL>
           Staging/Down Main Starter
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            Staging/Down Main Starter
-            <ASPECTTBL>
-              <HEADSTATES SIGNALHEAD="Staging/Down Main Starter">
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/Down Main Starter-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Down Main Starter-Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -733,18 +694,9 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
-          Staging/UpYardAccept
+          Staging/Up Yard Accept
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>
-            SIG/Staging/UpYardAccept
-            <ASPECTTBL>
-              <HEADSTATES SIGNALHEAD="Staging/UpYardAccept">
-                <ASPECTCOMMAND PLABEL="red">
-                  <IOSPEC DECADDR="SIG/Staging/Up Yard Accept-Red" JMRIPREFIX="MT" EXIT_CMD="true" USER_NAME="SIG/Staging/Up Yard Accept-Red">throw</IOSPEC>
-                </ASPECTCOMMAND>
-              </HEADSTATES>
-            </ASPECTTBL>
-          </PHYSIGNAL>
+          <PHYSIGNAL>SIG/Staging/UpYardAccept</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -786,8 +738,9 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
+          Staging/Up Main
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -914,8 +867,8 @@
         </BLOCK>
         <SECSIGNAL>
           42.7
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -1031,7 +984,7 @@
         <SECSIGNAL>
           42.28
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1087,7 +1040,7 @@
         <SECSIGNAL>
           42.27
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -1141,9 +1094,9 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
-          41.0
+          42.0
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1323,7 +1276,7 @@
         <SECSIGNAL>
           42.26
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1372,7 +1325,7 @@
         <SECSIGNAL>
           42.25
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -1473,7 +1426,7 @@
         <SECSIGNAL>
           42.3
           <PANELSIGNAL SIGLOCATION="LEFTCENT" SIGORIENT="TOP" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="TOP" />
@@ -1584,7 +1537,7 @@
         <SECSIGNAL>
           44.26
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1639,7 +1592,7 @@
         <SECSIGNAL>
           44.25
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -1682,7 +1635,7 @@
         <SECSIGNAL>
           45.8
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1753,7 +1706,7 @@
         <SECSIGNAL>
           44.3
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -1838,7 +1791,7 @@
         <SECSIGNAL>
           44.28
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1887,7 +1840,7 @@
         <SECSIGNAL>
           44.27
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -1936,7 +1889,7 @@
         <SECSIGNAL>
           44.6
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -1995,8 +1948,9 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
+          45.5
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -2045,7 +1999,7 @@
         <SECSIGNAL>
           45.26
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -2108,7 +2062,7 @@
         <SECSIGNAL>
           45.25
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -2209,7 +2163,7 @@
         <SECSIGNAL>
           45.6
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -2253,7 +2207,7 @@
         <SECSIGNAL>
           45.4
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -2284,7 +2238,7 @@
         <SECSIGNAL>
           44.7
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
@@ -2320,7 +2274,7 @@
         <SECSIGNAL>
           45.28
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -2390,7 +2344,7 @@
         <SECSIGNAL>
           45.27
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP2" />
-          <PHYSIGNAL>Standard-2</PHYSIGNAL>
+          <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_NAME LOC_NAME="UPCENT" NAME="52" FONT_NAME="f2" />
@@ -2434,7 +2388,7 @@
         <SECSIGNAL>
           45.10
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>Standard</PHYSIGNAL>
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -2479,9 +2433,6 @@
     </SECTION>
     <SECTION X="39" Y="20">
       <SEC_NAME LOC_NAME="CENT" NAME="Reset ESPs" FONT_NAME="ACTIVE" />
-    </SECTION>
-    <SECTION X="29" Y="21">
-      <BUTTON PRIMARY="" ALTERNATE="" DELAY="0" STATUS="false" FIT_TO_GRID="false" />
     </SECTION>
     <SECTION X="39" Y="21">
       <SEC_NAME LOC_NAME="CENT" NAME="[X]" FONT_NAME="ACTIVE" />
