@@ -837,6 +837,7 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
+          91.0
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>Staging/91.0</PHYSIGNAL>
         </SECSIGNAL>
@@ -858,6 +859,7 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
+          42.7
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
@@ -2781,6 +2783,11 @@
     </SECTION>
     <SECTION X="43" Y="22">
       <SEC_NAME LOC_NAME="CENT" NAME="[X]" FONT_NAME="ACTIVE" />
+      <BUTTON PRIMARY="" ALTERNATE="" DELAY="0" STATUS="false" FIT_TO_GRID="false">
+        <TRIGGER>
+          <IOSPEC DECADDR="ADM/ResetESPs" JMRIPREFIX="MT" USER_NAME="ADM/ResetESPs">throw</IOSPEC>
+        </TRIGGER>
+      </BUTTON>
     </SECTION>
     <SECTION X="2" Y="23">
       <TRACKGROUP>
