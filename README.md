@@ -9,6 +9,7 @@ Dispatcher Panel for [The Illawarra Line](https://illawarraline.net) HO Scale Mo
 
 ## File Structure
 
+```bash
 ├── .jmri
 │   ├── masts.xml
 │   └── resources
@@ -18,6 +19,8 @@ Dispatcher Panel for [The Illawarra Line](https://illawarraline.net) HO Scale Mo
 │               ├── aspects.xml
 │               └── index.shtml
 ├── panel.xml
+
+```
 
 - .jmri: Supporting directory for the custom masts to communicate over MQTT.
 - panel.xml: The CATS Panel XML file.
