@@ -2651,7 +2651,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -2663,7 +2663,7 @@
         <TRACK>LOWERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -2740,7 +2740,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -2867,7 +2867,7 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -2885,7 +2885,7 @@
         <TRACK>UPPERBACKSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -2991,7 +2991,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -3011,7 +3011,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -3059,7 +3059,7 @@
         <TRACK>UPPERBACKSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
@@ -3081,7 +3081,7 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT">
-        <SWITCHPOINTS>
+        <SWITCHPOINTS SPUR="true">
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true" />
         </SWITCHPOINTS>
       </SEC_EDGE>
