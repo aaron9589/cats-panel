@@ -22,7 +22,7 @@ Dispatcher Panel for [The Illawarra Line](https://illawarraline.net) HO Scale Mo
 
 ```
 
-- .jmri: Supporting directory for the custom masts to communicate over MQTT.
+- .jmri: Supporting files to support the CATS-specific signal masts in JMRI
 - panel.xml: The CATS Panel XML file.
 
 ## Install Guide
