@@ -156,7 +156,6 @@
   <TEEMAST />
   <COMPRESSIONTAG />
   <REFRESHTAG />
-  <JMRINAME JMRIPREFIX="ML" XMLTYPE="Light">jmri.jmrix.mqtt.MqttLightManager</JMRINAME>
   <JMRINAME JMRIPREFIX="MS" XMLTYPE="Sensor">jmri.jmrix.mqtt.MqttSensorManager</JMRINAME>
   <JMRINAME JMRIPREFIX="MT" XMLTYPE="Turnout">jmri.jmrix.mqtt.MqttTurnoutManager</JMRINAME>
   <TRACKPLAN COLUMNS="45" ROWS="26">
@@ -182,10 +181,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Down Track 1" STATION="Staging/Down Track 1" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 1">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 1" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 1">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 1">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 1" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 1">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -199,10 +198,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Staging/Down Yard Ladder" STATION="Staging/Down Yard Ladder" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Yard Ladder">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Yard Ladder" JMRIPREFIX="MS" USER_NAME="Staging/Down Yard Ladder">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Yard Ladder">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Yard Ladder" JMRIPREFIX="MS" USER_NAME="Staging/Down Yard Ladder">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -241,10 +240,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Down Track 2" STATION="Staging/Down Track 2" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 2">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 2" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 2">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 2">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 2" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 2">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -272,18 +271,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 2/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 2/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 2/State" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 2/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 2">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 2">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 2/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 2/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 2/State" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 2/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 2">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 2" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 2">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -330,10 +329,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Down Track 3" STATION="Staging/Down Track 3" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 3">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 3" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 3">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 3">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 3" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 3">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -361,18 +360,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 3/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 3/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 3/State" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 3/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 3">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 3">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 3/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 3/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 3/State" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 3/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 3">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 3" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 3">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -426,10 +425,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Down Track 4" STATION="Staging/Down Track 4" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 4">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 4" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 4">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Track 4">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Track 4" JMRIPREFIX="MS" USER_NAME="Staging/Down Track 4">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -457,18 +456,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 4/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 4/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 4/State" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 4/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 4">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 4">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 4/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 4/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 4/State" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 4/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Down Track 4">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Down Track 4" JMRIPREFIX="MT" USER_NAME="Staging/Down Track 4">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -521,10 +520,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Staging/Down Main" STATION="Staging/Down Main" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Main">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Main" JMRIPREFIX="MS" USER_NAME="Staging/Down Main">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Down Main">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Down Main" JMRIPREFIX="MS" USER_NAME="Staging/Down Main">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -565,10 +564,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Staging/Balloon Loop XOver" STATION="Staging/Balloon Loop XOver" DISCIPLINE="APB-2" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Balloon Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Balloon Loop XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Balloon Loop XOver" JMRIPREFIX="MS" USER_NAME="Staging/Balloon Loop XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Balloon Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Balloon Loop XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Balloon Loop XOver" JMRIPREFIX="MS" USER_NAME="Staging/Balloon Loop XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -636,10 +635,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Up Track 4" STATION="Staging/Up Track 4" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 4">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 4" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 4">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 4">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 4" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 4">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -654,18 +653,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 4/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 4/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 4/State" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 4/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 4">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 4">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 4/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 4/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 4/State" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 4/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 4">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 4" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 4">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -674,10 +673,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Staging/Up Yard Ladder" STATION="Staging/Up Yard Ladder" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Ladder">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Yard Ladder" JMRIPREFIX="MS" USER_NAME="Staging/Up Yard Ladder">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Yard Ladder" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Ladder">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Yard Ladder" JMRIPREFIX="MS" USER_NAME="Staging/Up Yard Ladder">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -703,10 +702,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Staging/Up Yard Approach" STATION="Staging/Up Yard Approach" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Yard Approach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Yard Approach" JMRIPREFIX="MS" USER_NAME="Staging/Up Yard Approach">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Yard Approach" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Yard Approach">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Yard Approach" JMRIPREFIX="MS" USER_NAME="Staging/Up Yard Approach">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -746,10 +745,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Staging/Up Main" STATION="Staging/Up Main" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Main">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Main" JMRIPREFIX="MS" USER_NAME="Staging/Up Main">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Main" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Main">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Main" JMRIPREFIX="MS" USER_NAME="Staging/Up Main">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -796,18 +795,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Balloon Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Balloon Loop/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Balloon Loop/State" JMRIPREFIX="MT" USER_NAME="Staging/Balloon Loop/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Balloon Loop" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Balloon Loop">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Balloon Loop" JMRIPREFIX="MT" USER_NAME="Staging/Balloon Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Balloon Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Balloon Loop/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Balloon Loop/State" JMRIPREFIX="MT" USER_NAME="Staging/Balloon Loop/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Balloon Loop" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Balloon Loop">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Balloon Loop" JMRIPREFIX="MT" USER_NAME="Staging/Balloon Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -850,12 +849,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Up Approach" STATION="Eloura Junction/Up Approach" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Up Approach" STATION="Kembla Junction/Up Approach" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Approach" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Approach">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Approach">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Approach" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Approach">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -894,12 +893,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Up Gate" STATION="Eloura Junction/Up Gate" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Up Gate" STATION="Kembla Junction/Up Gate" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Gate" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Gate">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Gate" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Gate">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Gate" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Gate">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Gate" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Gate">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -927,12 +926,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Up Main XOver" STATION="Eloura Junction/Up Main XOver" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Up Main XOver" STATION="Kembla Junction/Up Main XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Main XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Main XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Main XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Main XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Main XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Main XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Main XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -951,18 +950,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main/State" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Main/State" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Main/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Main" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Main">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="BOTTOM">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main/State" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Main/State" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Main/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Main">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Main" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Main">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -987,12 +986,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Main" STATION="Eloura Junction/Main" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Main" STATION="Kembla Junction/Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Main" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Main">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Main" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Main">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Main" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Main">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Main" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Main">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1021,12 +1020,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="SEN/Eloura Junction/Down XOver" STATION="Eloura Junction/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Down XOver" STATION="Kembla Junction/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Down XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Down XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Down XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Down XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1044,18 +1043,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Down Main/State" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Down Main/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Down Main/State" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Down Main/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Down Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Down Main">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Down Main" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Down Main">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Down Main/State" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Down Main/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Down Main/State" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Down Main/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Down Main" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Down Main">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Down Main" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Down Main">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1097,12 +1096,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Down Approach" STATION="Eloura Junction/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Down Approach" STATION="Kembla Junction/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Down Approach" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Down Approach">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Down Approach" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Down Approach">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Down Approach" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Down Approach">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1159,10 +1158,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Up Track 3" STATION="Staging/Up Track 3" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 3">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 3" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 3">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 3">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 3" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 3">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1177,18 +1176,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 3/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 3/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 3/State" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 3/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 3">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 3">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 3/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 3/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 3/State" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 3/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 3">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 3" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 3">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1227,30 +1226,30 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Loop/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Loop/State" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Loop">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Loop">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Loop" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Loop/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Loop/State" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Loop/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Eloura Junction/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Eloura Junction/Up Loop">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Junction/Up Loop" JMRIPREFIX="MT" USER_NAME="Kembla Junction/Up Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP">
-        <BLOCK NAME="Eloura Junction/Up Loop XOver" STATION="Eloura Junction/Up Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Up Loop XOver" STATION="Kembla Junction/Up Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Loop XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Loop XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Loop XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Up Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Up Loop XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Loop XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Loop XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1275,12 +1274,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Eloura Junction/Loop" STATION="Eloura Junction/Loop" DISCIPLINE="CTC" VISIBLE="true">
+        <BLOCK NAME="Kembla Junction/Loop" STATION="Kembla Junction/Loop" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Loop">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Loop" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Loop">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Eloura Junction/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Eloura Junction/Loop">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Loop" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Loop">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1355,10 +1354,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Up Track 2" STATION="Staging/Up Track 2" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 2">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 2" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 2">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 2">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 2" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 2">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1373,18 +1372,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 2/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 2/State">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 2/State" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 2/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 2">close</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 2">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 2/State" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 2/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 2/State" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 2/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="SWI/Staging/Up Track 2">throw</IOSPEC>
+              <IOSPEC DECADDR="Staging/Up Track 2" JMRIPREFIX="MT" USER_NAME="Staging/Up Track 2">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1456,10 +1455,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Staging/Up Track 1" STATION="Staging/Up Track 1" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 1">throw</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 1" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 1">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Staging/Up Track 1" JMRIPREFIX="MT" USER_NAME="SEN/Staging/Up Track 1">close</IOSPEC>
+            <IOSPEC DECADDR="Staging/Up Track 1" JMRIPREFIX="MS" USER_NAME="Staging/Up Track 1">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1503,10 +1502,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Kembla Heights/Platform Road" STATION="Kembla Heights/Platform Road" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kembla Heights/Platform Road" JMRIPREFIX="MT" USER_NAME="SEN/Kembla Heights/Platform Road">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Heights/Platform Road" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Platform Road">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kembla Heights/Platform Road" JMRIPREFIX="MT" USER_NAME="SEN/Kembla Heights/Platform Road">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Heights/Platform Road" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Platform Road">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1520,10 +1519,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kembla Heights/XOver" STATION="Kembla Heights/XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kembla Heights/XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kembla Heights/XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Heights/XOver" JMRIPREFIX="MS" USER_NAME="Kembla Heights/XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kembla Heights/XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kembla Heights/XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Heights/XOver" JMRIPREFIX="MS" USER_NAME="Kembla Heights/XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1555,10 +1554,10 @@
       <SEC_EDGE EDGE="TOP">
         <BLOCK NAME="Kembla Heights/Approach" STATION="Kembla Heights/Approach" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kembla Heights/Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kembla Heights/Approach">throw</IOSPEC>
+            <IOSPEC DECADDR="Kembla Heights/Approach" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Approach">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kembla Heights/Approach" JMRIPREFIX="MT" USER_NAME="SEN/Kembla Heights/Approach">close</IOSPEC>
+            <IOSPEC DECADDR="Kembla Heights/Approach" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Approach">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1624,18 +1623,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kembla Heights/Platform XOver/State" JMRIPREFIX="MT" USER_NAME="SWI/Kembla Heights/Platform XOver/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Heights/Platform XOver/State" JMRIPREFIX="MT" USER_NAME="Kembla Heights/Platform XOver/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kembla Heights/Platform XOver" JMRIPREFIX="MT" USER_NAME="SWI/Kembla Heights/Platform XOver">close</IOSPEC>
+              <IOSPEC DECADDR="Kembla Heights/Platform XOver" JMRIPREFIX="MT" USER_NAME="Kembla Heights/Platform XOver">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kembla Heights/Platform XOver/State" JMRIPREFIX="MT" USER_NAME="SWI/Kembla Heights/Platform XOver/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Heights/Platform XOver/State" JMRIPREFIX="MT" USER_NAME="Kembla Heights/Platform XOver/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kembla Heights/Platform XOver" JMRIPREFIX="MT" USER_NAME="SWI/Kembla Heights/Platform XOver">throw</IOSPEC>
+              <IOSPEC DECADDR="Kembla Heights/Platform XOver" JMRIPREFIX="MT" USER_NAME="Kembla Heights/Platform XOver">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1753,10 +1752,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Bombo/Up XOvers" STATION="Bombo/Up XOvers" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Up XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Up XOvers">throw</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Up XOvers" JMRIPREFIX="MS" USER_NAME="Bombo/Up XOvers">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Up XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Up XOvers">close</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Up XOvers" JMRIPREFIX="MS" USER_NAME="Bombo/Up XOvers">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1774,10 +1773,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Bombo/Loop" STATION="Bombo/Loop" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Loop">throw</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Loop" JMRIPREFIX="MS" USER_NAME="Bombo/Loop">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Loop">close</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Loop" JMRIPREFIX="MS" USER_NAME="Bombo/Loop">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1807,10 +1806,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Bombo/Down XOver" STATION="Bombo/Down XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Down XOver" JMRIPREFIX="MS" USER_NAME="Bombo/Down XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down XOver" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Down XOver" JMRIPREFIX="MS" USER_NAME="Bombo/Down XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1849,10 +1848,10 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK NAME="Kiama/Down XOvers" STATION="Kiama/Down XOvers" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down XOvers">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Down XOvers" JMRIPREFIX="MS" USER_NAME="Kiama/Down XOvers">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down XOvers" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down XOvers">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Down XOvers" JMRIPREFIX="MS" USER_NAME="Kiama/Down XOvers">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -1870,10 +1869,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Down Siding" STATION="Kiama/Down Siding" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Siding">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Down Siding" JMRIPREFIX="MS" USER_NAME="Kiama/Down Siding">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Siding">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Down Siding" JMRIPREFIX="MS" USER_NAME="Kiama/Down Siding">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -1940,18 +1939,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Bombo/Ballast Siding/State" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Ballast Siding/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Ballast Siding/State" JMRIPREFIX="MT" USER_NAME="Bombo/Ballast Siding/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Bombo/Ballast Siding" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Ballast Siding">throw</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Ballast Siding" JMRIPREFIX="MT" USER_NAME="Bombo/Ballast Siding">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Bombo/Ballast Siding/State" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Ballast Siding/State">close</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Ballast Siding/State" JMRIPREFIX="MT" USER_NAME="Bombo/Ballast Siding/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Bombo/Ballast Siding" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Ballast Siding">close</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Ballast Siding" JMRIPREFIX="MT" USER_NAME="Bombo/Ballast Siding">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -1985,18 +1984,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Bombo/Up Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Up Loop/State">close</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Up Loop/State" JMRIPREFIX="MT" USER_NAME="Bombo/Up Loop/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Bombo/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Up Loop">close</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Up Loop" JMRIPREFIX="MT" USER_NAME="Bombo/Up Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Bombo/Up Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Up Loop/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Up Loop/State" JMRIPREFIX="MT" USER_NAME="Bombo/Up Loop/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Bombo/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Up Loop">throw</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Up Loop" JMRIPREFIX="MT" USER_NAME="Bombo/Up Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -2024,10 +2023,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Bombo/Main" STATION="Bombo/Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Main">throw</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Main" JMRIPREFIX="MS" USER_NAME="Bombo/Main">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Main">close</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Main" JMRIPREFIX="MS" USER_NAME="Bombo/Main">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -2072,18 +2071,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Bombo/Down Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Down Loop/State">close</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Down Loop/State" JMRIPREFIX="MT" USER_NAME="Bombo/Down Loop/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Bombo/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Down Loop">close</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Down Loop" JMRIPREFIX="MT" USER_NAME="Bombo/Down Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Bombo/Down Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Down Loop/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Down Loop/State" JMRIPREFIX="MT" USER_NAME="Bombo/Down Loop/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Bombo/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Bombo/Down Loop">throw</IOSPEC>
+              <IOSPEC DECADDR="Bombo/Down Loop" JMRIPREFIX="MT" USER_NAME="Bombo/Down Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -2120,10 +2119,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Bombo/Down Main" STATION="Bombo/Down Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">throw</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Down Main" JMRIPREFIX="MS" USER_NAME="Bombo/Down Main">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Bombo/Down Main" JMRIPREFIX="MT" USER_NAME="SEN/Bombo/Down Main">close</IOSPEC>
+            <IOSPEC DECADDR="Bombo/Down Main" JMRIPREFIX="MS" USER_NAME="Bombo/Down Main">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -2159,10 +2158,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Up XOver" STATION="Kiama/Up XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Up XOver" JMRIPREFIX="MS" USER_NAME="Kiama/Up XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Up XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Up XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Up XOver" JMRIPREFIX="MS" USER_NAME="Kiama/Up XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -2190,18 +2189,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Up Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Up Loop/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Up Loop/State" JMRIPREFIX="MT" USER_NAME="Kiama/Up Loop/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Up Loop">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Up Loop" JMRIPREFIX="MT" USER_NAME="Kiama/Up Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="BOTTOM">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Up Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Up Loop/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Up Loop/State" JMRIPREFIX="MT" USER_NAME="Kiama/Up Loop/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Up Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Up Loop">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Up Loop" JMRIPREFIX="MT" USER_NAME="Kiama/Up Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -2228,10 +2227,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Main" STATION="Kiama/Main" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Main">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Main" JMRIPREFIX="MS" USER_NAME="Kiama/Main">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Main" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Main">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Main" JMRIPREFIX="MS" USER_NAME="Kiama/Main">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -2290,18 +2289,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="BOTTOM">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Down Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Loop/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Loop/State" JMRIPREFIX="MT" USER_NAME="Kiama/Down Loop/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Loop">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Loop" JMRIPREFIX="MT" USER_NAME="Kiama/Down Loop">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="LEFT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Down Loop/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Loop/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Loop/State" JMRIPREFIX="MT" USER_NAME="Kiama/Down Loop/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Down Loop" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Loop">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Loop" JMRIPREFIX="MT" USER_NAME="Kiama/Down Loop">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -2351,18 +2350,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Down Siding/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Siding/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Siding/State" JMRIPREFIX="MT" USER_NAME="Kiama/Down Siding/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Siding">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="Kiama/Down Siding">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Down Siding/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Siding/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Siding/State" JMRIPREFIX="MT" USER_NAME="Kiama/Down Siding/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Down Siding">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Down Siding" JMRIPREFIX="MT" USER_NAME="Kiama/Down Siding">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
@@ -2495,10 +2494,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Loop" STATION="Kiama/Loop" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Loop">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Loop" JMRIPREFIX="MS" USER_NAME="Kiama/Loop">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Loop" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Loop">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Loop" JMRIPREFIX="MS" USER_NAME="Kiama/Loop">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
@@ -2543,10 +2542,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Down Loop XOver" STATION="Kiama/Down Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Loop XOver">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Down Loop XOver" JMRIPREFIX="MS" USER_NAME="Kiama/Down Loop XOver">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="SEN/Kiama/Down Loop XOver" JMRIPREFIX="MT" USER_NAME="SEN/Kiama/Down Loop XOver">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama/Down Loop XOver" JMRIPREFIX="MS" USER_NAME="Kiama/Down Loop XOver">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -2566,18 +2565,18 @@
         <SWITCHPOINTS>
           <ROUTEINFO ROUTEID="RIGHT">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Turntable Road/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Turntable Road/State">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Turntable Road/State" JMRIPREFIX="MT" USER_NAME="Kiama/Turntable Road/State">throw</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Turntable Road" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Turntable Road">throw</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Turntable Road" JMRIPREFIX="MT" USER_NAME="Kiama/Turntable Road">throw</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
           <ROUTEINFO ROUTEID="TOP" NORMAL="true">
             <SELECTEDREPORT>
-              <IOSPEC DECADDR="SWI/Kiama/Turntable Road/State" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Turntable Road/State">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Turntable Road/State" JMRIPREFIX="MT" USER_NAME="Kiama/Turntable Road/State">close</IOSPEC>
             </SELECTEDREPORT>
             <ROUTECOMMAND>
-              <IOSPEC DECADDR="SWI/Kiama/Turntable Road" JMRIPREFIX="MT" USER_NAME="SWI/Kiama/Turntable Road">close</IOSPEC>
+              <IOSPEC DECADDR="Kiama/Turntable Road" JMRIPREFIX="MT" USER_NAME="Kiama/Turntable Road">close</IOSPEC>
             </ROUTECOMMAND>
           </ROUTEINFO>
         </SWITCHPOINTS>
