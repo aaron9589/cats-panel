@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/dispatcher-traininfo.xsl" type="text/xsl"?>
+<!DOCTYPE traininfofile SYSTEM "/xml/DTD/dispatcher-traininfo.dtd">
+<traininfofile>
+  <!--Written by JMRI version 5.4+R9005ecb4ac on Fri Dec 29 19:32:27 AEDT 2023-->
+  <traininfo version="4" transitname="Staging Down Track 2" transitid="Staging Down Track 2" trainname="" dccaddress="" trainintransit="yes" startblockname="Staging/Down Track 2-1" startblockid="Staging/Down Track 2" startblockseq="1" endblockname="Kembla Junction/Up Approach" endblockid="Kembla Junction/Up Approach" endblockseq="4" trainfromroster="no" trainfromtrains="no" trainfromuser="no" trainfromsetlater="yes" priority="5" resetwhendone="no" delayedrestart="no" reverseatend="no" reversedelayedrestart="no" terminatewhendone="yes" departuretimehr="8" departuretimemin="0" traintype="&lt;none&gt;" autorun="yes" loadatstartup="no" allocatealltheway="no" allocationmethod="-1" nexttrain="None" speedfactor="1.0" maxspeed="0.6" ramprate="None" resistancewheels="yes" runinreverse="no" sounddecoder="no" maxtrainlength="395.0" usespeedprofile="no" stopbyspeedprofile="no" stopbyspeedprofileadjust="1.0" waittime="1.0" blockname="" />
+</traininfofile>
