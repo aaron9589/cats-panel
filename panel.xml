@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DOCUMENT VERSION="3.0" WIDTH="1350" HEIGHT="852" X="0" Y="0">
+<DOCUMENT VERSION="2.992" WIDTH="1350" HEIGHT="852" X="0" Y="0">
   <FONTDEFINITION FONTKEY="FONT_LABEL" FONTNAME="Signal Text" FONTCOLOR="-1" FONTSIZE="10" FONTSTYLE="PLAIN" />
   <FONTDEFINITION FONTKEY="FONT_TRAIN" FONTNAME="Train Identities" FONTCOLOR="-1" FONTSIZE="13" FONTSTYLE="PLAIN" />
   <FONTDEFINITION FONTKEY="ONCALL" FONTNAME="On Call Train" FONTCOLOR="-4144960" FONTSIZE="15" FONTSTYLE="PLAIN" />
@@ -906,7 +906,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
-      <SEC_NAME LOC_NAME="UPCENT" NAME="Swing Gate" FONT_NAME="f3" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="Swing Gate" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="29" Y="5">
       <TRACKGROUP>
@@ -971,6 +971,7 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
+          42.28
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
           <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
@@ -1026,6 +1027,7 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
+          42.27
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
@@ -1081,6 +1083,7 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
+          42.0
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
           <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
@@ -1204,15 +1207,75 @@
     <SECTION X="22" Y="6">
       <SEC_NAME LOC_NAME="UPCENT" NAME="91.0" FONT_NAME="FONT_LABEL" />
     </SECTION>
-    <SECTION X="29" Y="6">
-      <SEC_NAME LOC_NAME="LOWCENT" NAME="42.3" FONT_NAME="FONT_LABEL" />
-    </SECTION>
-    <SECTION X="30" Y="6">
+    <SECTION X="26" Y="6">
       <TRACKGROUP>
         <TRACK>LOWERSLASH</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Kembla Heights/Approach" STATION="Kembla Heights/Approach" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kembla Heights/Approach" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Approach">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kembla Heights/Approach" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Approach">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="BOTTOM" />
+    </SECTION>
+    <SECTION X="27" Y="6">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kembla Junction/Gate Branch" STATION="Kembla Junction/Gate Branch" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Gate Branch" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Gate Branch">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Gate Branch" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Gate Branch">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
+    </SECTION>
+    <SECTION X="28" Y="6">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="Swing Gate" FONT_NAME="f3" />
+    </SECTION>
+    <SECTION X="29" Y="6">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+      </SEC_EDGE>
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="30" Y="6">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kembla Junction/Up Loop XOver" STATION="Kembla Junction/Up Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Loop XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Loop XOver">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kembla Junction/Up Loop XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Loop XOver">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+        <SECSIGNAL>
+          42.3
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
+        </SECSIGNAL>
+      </SEC_EDGE>
     </SECTION>
     <SECTION X="31" Y="6">
       <TRACKGROUP>
@@ -1241,14 +1304,7 @@
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP">
-        <BLOCK NAME="Kembla Junction/Up Loop XOver" STATION="Kembla Junction/Up Loop XOver" DISCIPLINE="CTC" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="Kembla Junction/Up Loop XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Loop XOver">close</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="Kembla Junction/Up Loop XOver" JMRIPREFIX="MS" USER_NAME="Kembla Junction/Up Loop XOver">throw</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
+        <BLOCK />
       </SEC_EDGE>
       <SEC_NAME LOC_NAME="LOWCENT" NAME="52" FONT_NAME="f2" />
     </SECTION>
@@ -1259,6 +1315,7 @@
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
         <SECSIGNAL>
+          42.26
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP2" />
           <PHYSIGNAL>SM-2</PHYSIGNAL>
         </SECSIGNAL>
@@ -1307,6 +1364,7 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK />
         <SECSIGNAL>
+          42.25
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
@@ -1397,32 +1455,28 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="16" Y="7">
+    <SECTION X="13" Y="7">
       <SEC_NAME LOC_NAME="UPCENT" NAME="Kembla Heights" FONT_NAME="f1" />
     </SECTION>
-    <SECTION X="18" Y="7">
+    <SECTION X="15" Y="7">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="KH1" FONT_NAME="FONT_LABEL" />
     </SECTION>
-    <SECTION X="29" Y="7">
+    <SECTION X="25" Y="7">
       <TRACKGROUP>
         <TRACK>LOWERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="BOTTOM">
-        <BLOCK />
-        <SECSIGNAL>
-          42.3
-          <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="TOP" SIGPANTYPE="LAMP1" />
-          <PHYSIGNAL>SM-1</PHYSIGNAL>
-        </SECSIGNAL>
-      </SEC_EDGE>
+      <SEC_EDGE EDGE="BOTTOM" />
     </SECTION>
-    <SECTION X="30" Y="7">
+    <SECTION X="26" Y="7">
       <TRACKGROUP>
         <TRACK>UPPERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
+    </SECTION>
+    <SECTION X="30" Y="7">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="42.3" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="32" Y="7">
       <SEC_NAME LOC_NAME="UPCENT" NAME="42.26" FONT_NAME="FONT_LABEL" />
@@ -1477,14 +1531,14 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="15" Y="8">
+    <SECTION X="12" Y="8">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="16" Y="8">
+    <SECTION X="13" Y="8">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1492,7 +1546,7 @@
       <SEC_EDGE EDGE="LEFT" />
       <STATION COLORTAG="f0">UPCENT</STATION>
     </SECTION>
-    <SECTION X="17" Y="8">
+    <SECTION X="14" Y="8">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1508,7 +1562,7 @@
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="18" Y="8">
+    <SECTION X="15" Y="8">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1523,43 +1577,30 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
-          KH1
           <PANELSIGNAL SIGLOCATION="UPCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
-    <SECTION X="19" Y="8">
+    <SECTION X="16" Y="8">
       <TRACKGROUP>
         <TRACK>LOWERBACKSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="BOTTOM" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="28" Y="8">
+    <SECTION X="24" Y="8">
       <TRACKGROUP>
         <TRACK>LOWERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="BOTTOM" />
     </SECTION>
-    <SECTION X="29" Y="8">
+    <SECTION X="25" Y="8">
       <TRACKGROUP>
         <TRACK>UPPERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="LEFT" />
-<<<<<<< Updated upstream
-      <SEC_EDGE EDGE="TOP">
-        <BLOCK NAME="Kembla Heights/Approach" STATION="Kembla Heights/Approach" DISCIPLINE="CTC" VISIBLE="true">
-          <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="Kembla Heights/Approach" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Approach">close</IOSPEC>
-          </OCCUPIEDSPEC>
-          <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="Kembla Heights/Approach" JMRIPREFIX="MS" USER_NAME="Kembla Heights/Approach">throw</IOSPEC>
-          </UNOCCUPIEDSPEC>
-        </BLOCK>
-      </SEC_EDGE>
-=======
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
     <SECTION X="10" Y="9">
@@ -1583,7 +1624,6 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
       <SEC_NAME LOC_NAME="LOWCENT" NAME="Kembla Heights Yard" FONT_NAME="f3" />
->>>>>>> Stashed changes
     </SECTION>
     <SECTION X="13" Y="9">
       <TRACKGROUP>
@@ -1596,7 +1636,9 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Kembla Heights/Yard" STATION="Kembla Heights/Yard" DISCIPLINE="Unknown" VISIBLE="true" />
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="15" Y="9">
@@ -1604,40 +1646,15 @@
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
-      <SEC_NAME LOC_NAME="UPCENT" NAME="Kembla Heights Yard" FONT_NAME="f3" />
-    </SECTION>
-    <SECTION X="16" Y="9">
-      <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
-      </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
-    </SECTION>
-    <SECTION X="17" Y="9">
-      <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
-      </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT">
-        <BLOCK NAME="Kembla Heights/Yard" STATION="Kembla Heights/Yard" DISCIPLINE="Unknown" VISIBLE="true" />
-      </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT" />
-    </SECTION>
-    <SECTION X="18" Y="9">
-      <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
-      </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
         <BLOCK />
         <SECSIGNAL>
-          KH3
           <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="RIGHT" SIGPANTYPE="LAMP1" />
           <PHYSIGNAL>SM-1</PHYSIGNAL>
         </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
-    <SECTION X="19" Y="9">
+    <SECTION X="16" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
         <TRACK>UPPERBACKSLASH</TRACK>
@@ -1665,7 +1682,7 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="20" Y="9">
+    <SECTION X="17" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1673,21 +1690,21 @@
       <SEC_EDGE EDGE="LEFT" />
       <SEC_NAME LOC_NAME="UPCENT" NAME="8" FONT_NAME="f2" />
     </SECTION>
-    <SECTION X="21" Y="9">
+    <SECTION X="18" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="22" Y="9">
+    <SECTION X="19" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="23" Y="9">
+    <SECTION X="20" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1700,7 +1717,7 @@
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="24" Y="9">
+    <SECTION X="21" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1709,38 +1726,31 @@
         <BLOCK />
       </SEC_EDGE>
     </SECTION>
-    <SECTION X="25" Y="9">
+    <SECTION X="22" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="26" Y="9">
+    <SECTION X="23" Y="9">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
-    <SECTION X="27" Y="9">
-      <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
-      </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
-    </SECTION>
-    <SECTION X="28" Y="9">
+    <SECTION X="24" Y="9">
       <TRACKGROUP>
         <TRACK>UPPERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
     </SECTION>
-    <SECTION X="18" Y="10">
+    <SECTION X="15" Y="10">
       <SEC_NAME LOC_NAME="UPCENT" NAME="KH3" FONT_NAME="FONT_LABEL" />
     </SECTION>
-    <SECTION X="23" Y="10">
+    <SECTION X="20" Y="10">
       <SEC_NAME LOC_NAME="UPCENT" NAME="KH2" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="12" Y="12">
