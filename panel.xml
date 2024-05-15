@@ -1249,7 +1249,7 @@
     </SECTION>
     <SECTION X="29" Y="6">
       <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
+        <TRACK SPEED="Slow">HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
