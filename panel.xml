@@ -60,6 +60,9 @@
   <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="2" TEMPLATENAME="SM-2">
     <ASPECTMAP R281="green|red" R281B="green|red" R282="yellow|yellow" R284="yellow|yellow" RES_NORM="flashing red|red" ADV_NORM="yellow|yellow" R285="yellow|red" R281C="green|red" C412="green|red" C413="yellow|yellow" C414="yellow|yellow" RES_LIM="red|flashing red" ADV_LIM="yellow|yellow" R281D="yellow|red" R283="red|green" C417="red|green" R283A="red|green" R283B="red|green" RES_MED="red|flashing red" ADV_MED="red|green" R286="red|yellow" R287="red|green" C422="red|green" C423="red|green" C424="red|green" RES_SLO="red|flashing red" ADV_SLO="red|green" R288="red|yellow" R292="red|red" R291="red|red" />
   </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="44.7">
+    <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="flashing red" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="green" C417="green" R283A="green" R283B="green" RES_MED="flashing red" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="flashing red" ADV_SLO="green" R288="yellow" R292="red" R291="red" />
+  </SIGNALTEMPLATE>
   <TRAINSTORE>
     <TRAINEDIT>
       <EDITRECORD FIELD_KEY="TRAIN_NAME" FIELD_VISIBLE="false" FIELDLABEL="TRAIN_NAME" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="127" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
@@ -1807,6 +1810,7 @@
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="11" Y="14">
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="Loop" FONT_NAME="f3" />
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
@@ -1821,7 +1825,6 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
-      <SEC_NAME LOC_NAME="LOWCENT" NAME="Loop" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="12" Y="14">
       <TRACKGROUP>
@@ -1908,8 +1911,9 @@
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
     <SECTION X="39" Y="14">
+      <SEC_NAME LOC_NAME="LOWLEFT" NAME="Down Siding" FONT_NAME="f3" />
       <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
+        <TRACK SPEED="Slow">HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
@@ -1922,7 +1926,6 @@
           </UNOCCUPIEDSPEC>
         </BLOCK>
       </SEC_EDGE>
-      <SEC_NAME LOC_NAME="LOWLEFT" NAME="Down Siding" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="40" Y="14">
       <TRACKGROUP>
@@ -2507,7 +2510,7 @@
     </SECTION>
     <SECTION X="6" Y="16">
       <TRACKGROUP>
-        <TRACK>UPPERSLASH</TRACK>
+        <TRACK SPEED="Slow">UPPERSLASH</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="LEFT" />
       <SEC_EDGE EDGE="TOP" />
@@ -2644,7 +2647,7 @@
     </SECTION>
     <SECTION X="33" Y="16">
       <TRACKGROUP>
-        <TRACK>HORIZONTAL</TRACK>
+        <TRACK SPEED="Slow">HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
