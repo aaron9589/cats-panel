@@ -24,6 +24,11 @@
       <unlit allowed="no" />
     </mqttsignalmast>
     <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
+      <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.4)</systemName>
+      <userName>KIA-45.4</userName>
+      <unlit allowed="no" />
+    </mqttsignalmast>
+    <mqttsignalmast class="jmri.jmrix.mqtt.configurexml.MqttSignalMastXml">
       <systemName>IF$mqm:cats-masts:cats-virtual($KIA-45.5)</systemName>
       <userName>KIA-45.5</userName>
       <unlit allowed="no" />

@@ -63,6 +63,12 @@
   <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="44.7">
     <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="flashing red" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="green" C417="green" R283A="green" R283B="green" RES_MED="flashing red" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="flashing red" ADV_SLO="green" R288="yellow" R292="red" R291="red" />
   </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="2" TEMPLATENAME="45.27">
+    <ASPECTMAP R281="green|red" R281B="green|red" R282="yellow|yellow" R284="yellow|yellow" RES_NORM="flashing red|red" ADV_NORM="yellow|yellow" R285="yellow|red" R281C="green|red" C412="green|red" C413="yellow|yellow" C414="yellow|yellow" RES_LIM="red|flashing red" ADV_LIM="yellow|yellow" R281D="yellow|red" R283="red|green" C417="red|green" R283A="red|green" R283B="red|green" RES_MED="red|flashing red" ADV_MED="red|green" R286="green|green" R287="red|green" C422="red|green" C423="red|green" C424="red|green" RES_SLO="red|flashing red" ADV_SLO="red|green" R288="red|yellow" R292="red|red" R291="red|red" />
+  </SIGNALTEMPLATE>
+  <SIGNALTEMPLATE TEMPLATEKIND="Lamp" TEMPLATEHEADS="1" TEMPLATENAME="OuterTest">
+    <ASPECTMAP R281="green" R281B="green" R282="green" R284="green" RES_NORM="flashing red" ADV_NORM="green" R285="yellow" R281C="green" C412="green" C413="green" C414="green" RES_LIM="flashing red" ADV_LIM="green" R281D="yellow" R283="green" C417="green" R283A="green" R283B="green" RES_MED="flashing red" ADV_MED="green" R286="yellow" R287="green" C422="green" C423="green" C424="green" RES_SLO="flashing red" ADV_SLO="green" R288="yellow" R292="green" R291="green" />
+  </SIGNALTEMPLATE>
   <TRAINSTORE>
     <TRAINEDIT>
       <EDITRECORD FIELD_KEY="TRAIN_NAME" FIELD_VISIBLE="false" FIELDLABEL="TRAIN_NAME" FIELD_EDIT="true" FIELD_MANDATORY="true" FIELD_WIDTH="127" ALIGNMENT="CENTER" FIELD_DEFAULT="" FIELD_CLASS="String" />
@@ -1121,6 +1127,13 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="44" Y="5">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <SHARED X="2" Y="15">LEFT</SHARED>
       </SEC_EDGE>
@@ -1947,7 +1960,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <SHARED X="43" Y="5">RIGHT</SHARED>
+        <SHARED X="44" Y="5">RIGHT</SHARED>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="3" Y="15">
@@ -2326,7 +2339,16 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK NAME="Kiama/Down Starter" STATION="Kiama/Down Starter" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kiama/Down XOvers" JMRIPREFIX="MS" USER_NAME="Kiama/Down XOvers">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kiama/Down XOvers" JMRIPREFIX="MS" USER_NAME="Kiama/Down XOvers">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT">
         <BLOCK />
         <SECSIGNAL>
@@ -2364,7 +2386,9 @@
       <SEC_EDGE EDGE="BOTTOM">
         <BLOCK />
       </SEC_EDGE>
-      <SEC_EDGE EDGE="LEFT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK />
+      </SEC_EDGE>
     </SECTION>
     <SECTION X="33" Y="15">
       <TRACKGROUP>
@@ -2444,7 +2468,18 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama - Berry" STATION="Kiama - Berry" DISCIPLINE="Unknown" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Down Approach" STATION="Kiama/Down Approach" DISCIPLINE="CTC" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kiama/Down Approach" JMRIPREFIX="MS" USER_NAME="Kiama/Down Approach">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kiama/Down Approach" JMRIPREFIX="MS" USER_NAME="Kiama/Down Approach">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+        <SECSIGNAL>
+          Kia-Test
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="40" Y="15">
@@ -2458,22 +2493,39 @@
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
-      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
+        <SECSIGNAL>
+          KIA-45.4
+          <PANELSIGNAL SIGLOCATION="LOWCENT" SIGORIENT="LEFT" SIGPANTYPE="LAMP1" />
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
+        </SECSIGNAL>
+      </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
-      <SEC_NAME LOC_NAME="LOWCENT" NAME="MES Beyond This Point" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="42" Y="15">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
-      <SEC_EDGE EDGE="LEFT" />
+      <SEC_EDGE EDGE="LEFT">
+        <BLOCK NAME="Kiama/Down Main Approach" STATION="Kiama/Down Main Approach" DISCIPLINE="Unknown" VISIBLE="true" />
+      </SEC_EDGE>
+      <SEC_NAME LOC_NAME="LOWLEFT" NAME="Mini Electric Staff" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="43" Y="15">
       <TRACKGROUP>
         <TRACK>HORIZONTAL</TRACK>
       </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="44" Y="15">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
+        <BLOCK />
         <SHARED X="2" Y="23">LEFT</SHARED>
       </SEC_EDGE>
       <SEC_EDGE EDGE="LEFT" />
@@ -2647,7 +2699,7 @@
     </SECTION>
     <SECTION X="33" Y="16">
       <TRACKGROUP>
-        <TRACK SPEED="Slow">HORIZONTAL</TRACK>
+        <TRACK SPEED="Normal">HORIZONTAL</TRACK>
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT">
         <BLOCK />
@@ -2678,6 +2730,12 @@
     </SECTION>
     <SECTION X="38" Y="16">
       <SEC_NAME LOC_NAME="UPCENT" NAME="45.6" FONT_NAME="FONT_LABEL" />
+    </SECTION>
+    <SECTION X="41" Y="16">
+      <SEC_NAME LOC_NAME="UPCENT" NAME="45.4" FONT_NAME="FONT_LABEL" />
+    </SECTION>
+    <SECTION X="42" Y="16">
+      <SEC_NAME LOC_NAME="UPLEFT" NAME="Beyond This Point" FONT_NAME="f3" />
     </SECTION>
     <SECTION X="3" Y="17">
       <SEC_NAME LOC_NAME="UPCENT" NAME="Ballast Siding" FONT_NAME="f2" />
@@ -2855,7 +2913,8 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <SHARED X="43" Y="15">RIGHT</SHARED>
+        <BLOCK NAME="Kiama-Berry" STATION="Kiama-Berry" DISCIPLINE="Unknown" VISIBLE="true" />
+        <SHARED X="44" Y="15">RIGHT</SHARED>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="3" Y="23">
