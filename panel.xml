@@ -2476,10 +2476,6 @@
             <IOSPEC DECADDR="Kiama/Down Approach" JMRIPREFIX="MS" USER_NAME="Kiama/Down Approach">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
-        <SECSIGNAL>
-          Kia-Test
-          <PHYSIGNAL>SM-1</PHYSIGNAL>
-        </SECSIGNAL>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="40" Y="15">
@@ -2509,7 +2505,18 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Down Main Approach" STATION="Kiama/Down Main Approach" DISCIPLINE="Unknown" VISIBLE="true" />
+        <BLOCK NAME="Kiama/Outer MES Boundary" STATION="Kiama/Outer MES Boundary" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="KIA-Outer MES Boundary" JMRIPREFIX="MT" USER_NAME="KIA-Outer MES Boundary">throw</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="KIA-Outer MES Boundary" JMRIPREFIX="MT" USER_NAME="KIA-Outer MES Boundary">close</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
+        <SECSIGNAL>
+          KIA-Test
+          <PHYSIGNAL>SM-1</PHYSIGNAL>
+        </SECSIGNAL>
       </SEC_EDGE>
       <SEC_NAME LOC_NAME="LOWLEFT" NAME="Mini Electric Staff" FONT_NAME="f3" />
     </SECTION>
