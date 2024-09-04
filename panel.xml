@@ -390,6 +390,9 @@
     <SECTION X="14" Y="3">
       <SEC_NAME LOC_NAME="UPLEFT" NAME="Track 4: 365m" FONT_NAME="f4" />
     </SECTION>
+    <SECTION X="25" Y="3">
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="&lt;-UP | DOWN -&gt;" FONT_NAME="f1" />
+    </SECTION>
     <SECTION X="34" Y="3">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="Kembla Junction" FONT_NAME="f1" />
     </SECTION>
@@ -1785,6 +1788,9 @@
     <SECTION X="14" Y="13">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="44.25" FONT_NAME="FONT_LABEL" />
     </SECTION>
+    <SECTION X="20" Y="13">
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="&lt;-UP | DOWN -&gt;" FONT_NAME="f1" />
+    </SECTION>
     <SECTION X="28" Y="13">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="Kiama" FONT_NAME="f1" />
     </SECTION>
@@ -2507,10 +2513,10 @@
       <SEC_EDGE EDGE="LEFT">
         <BLOCK NAME="Kiama/Outer MES Boundary" STATION="Kiama/Outer MES Boundary" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="KIA-Outer MES Boundary" JMRIPREFIX="MT" USER_NAME="KIA-Outer MES Boundary">throw</IOSPEC>
+            <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="KIA-Outer MES Boundary" JMRIPREFIX="MT" USER_NAME="KIA-Outer MES Boundary">close</IOSPEC>
+            <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SECSIGNAL>
@@ -2762,6 +2768,9 @@
     <SECTION X="28" Y="20">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="Manildra Sidings" FONT_NAME="f2" />
     </SECTION>
+    <SECTION X="20" Y="21">
+      <SEC_NAME LOC_NAME="LOWCENT" NAME="&lt;-UP | DOWN -&gt;" FONT_NAME="f1" />
+    </SECTION>
     <SECTION X="27" Y="21">
       <TRACKGROUP>
         <TRACK>LOWERSLASH</TRACK>
@@ -2920,7 +2929,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama-Berry" STATION="Kiama-Berry" DISCIPLINE="Unknown" VISIBLE="true" />
+        <BLOCK NAME="Kiama-Berry" STATION="Kiama-Berry" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
         <SHARED X="44" Y="15">RIGHT</SHARED>
       </SEC_EDGE>
     </SECTION>
@@ -3047,7 +3063,14 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Berry-Bomaderry" STATION="Berry-Bomaderry" DISCIPLINE="Unknown" VISIBLE="true" />
+        <BLOCK NAME="Berry-Bomaderry" STATION="Berry-Bomaderry" DISCIPLINE="ABS" VISIBLE="true">
+          <OCCUPIEDSPEC>
+            <IOSPEC DECADDR="Berry-Bomaderry" JMRIPREFIX="MS" USER_NAME="Berry-Bomaderry">close</IOSPEC>
+          </OCCUPIEDSPEC>
+          <UNOCCUPIEDSPEC>
+            <IOSPEC DECADDR="Berry-Bomaderry" JMRIPREFIX="MS" USER_NAME="Berry-Bomaderry">throw</IOSPEC>
+          </UNOCCUPIEDSPEC>
+        </BLOCK>
       </SEC_EDGE>
     </SECTION>
     <SECTION X="18" Y="23">
