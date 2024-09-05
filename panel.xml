@@ -2511,7 +2511,7 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama/Outer MES Boundary" STATION="Kiama/Outer MES Boundary" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Kiama-Berry" STATION="Kiama-Berry" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
             <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">close</IOSPEC>
           </OCCUPIEDSPEC>
@@ -2766,7 +2766,42 @@
       <SEC_NAME LOC_NAME="UPCENT" NAME="45.10" FONT_NAME="FONT_LABEL" />
     </SECTION>
     <SECTION X="28" Y="20">
-      <SEC_NAME LOC_NAME="LOWCENT" NAME="Manildra Sidings" FONT_NAME="f2" />
+      <TRACKGROUP>
+        <TRACK>LOWERSLASH</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="BOTTOM" />
+    </SECTION>
+    <SECTION X="29" Y="20">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="30" Y="20">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="31" Y="20">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="32" Y="20">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="37" Y="20">
+      <SEC_NAME LOC_NAME="CENT" NAME="Manildra Plant Sidings (Shoalhaven Starches)" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="20" Y="21">
       <SEC_NAME LOC_NAME="LOWCENT" NAME="&lt;-UP | DOWN -&gt;" FONT_NAME="f1" />
@@ -2811,7 +2846,21 @@
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT" />
     </SECTION>
+    <SECTION X="31" Y="21">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
     <SECTION X="32" Y="21">
+      <TRACKGROUP>
+        <TRACK>HORIZONTAL</TRACK>
+      </TRACKGROUP>
+      <SEC_EDGE EDGE="RIGHT" />
+      <SEC_EDGE EDGE="LEFT" />
+    </SECTION>
+    <SECTION X="34" Y="21">
       <SEC_NAME LOC_NAME="CENT" NAME="Bomaderry Yard" FONT_NAME="f2" />
     </SECTION>
     <SECTION X="43" Y="21">
@@ -2929,12 +2978,12 @@
       </TRACKGROUP>
       <SEC_EDGE EDGE="RIGHT" />
       <SEC_EDGE EDGE="LEFT">
-        <BLOCK NAME="Kiama-Berry" STATION="Kiama-Berry" DISCIPLINE="ABS" VISIBLE="true">
+        <BLOCK NAME="Berry-Kiama" STATION="Berry-Kiama" DISCIPLINE="ABS" VISIBLE="true">
           <OCCUPIEDSPEC>
-            <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">close</IOSPEC>
+            <IOSPEC DECADDR="Berry-Kiama" JMRIPREFIX="MS" USER_NAME="Berry-Kiama">close</IOSPEC>
           </OCCUPIEDSPEC>
           <UNOCCUPIEDSPEC>
-            <IOSPEC DECADDR="Kiama-Berry" JMRIPREFIX="MS" USER_NAME="Kiama-Berry">throw</IOSPEC>
+            <IOSPEC DECADDR="Berry-Kiama" JMRIPREFIX="MS" USER_NAME="Berry-Kiama">throw</IOSPEC>
           </UNOCCUPIEDSPEC>
         </BLOCK>
         <SHARED X="44" Y="15">RIGHT</SHARED>
