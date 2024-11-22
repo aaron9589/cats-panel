@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Panel with Passenger Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .panel {
+      background-color: #333;
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+
+    .panel .section {
+      margin-bottom: 20px;
+    }
+
+    .panel .section h2 {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 1rem;
+      color: white;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button.yellow {
+      background-color: #ffcc00;
+    }
+    .button.gray {
+      background-color: #cccccc;
+      color: black;
+      cursor: not-allowed;
+    }
+    .button.red {
+      background-color: #ff4444;
+    }
+    .button.green {
+      background-color: #44cc44;
+    }
+    .button.bell {
+      background-color: #e60000;
+    }
+    .button.transparent {
+      background-color: transparent;
+      border: 2px solid white;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+
+    .emergency-brake {
+      margin-top: 20px;
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .button.white {
+      background-color: white;
+      color: black;
+    }
+
+    .right-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .clock {
+      background-color: #222;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      width: 200px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .passenger-counter {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      color: white;
+      width: 200px;
+      text-align: center;
+    }
+
+    .passenger-counter h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .passenger-counter .count {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .timetable {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      color: white;
+      width: 300px;
+      text-align: center;
+    }
+
+    .timetable h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .timetable table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .timetable th, .timetable td {
+      border: 1px solid #444;
+      padding: 5px;
+      text-align: left;
+    }
+
+    .timetable th {
+      background-color: #333;
+      color: white;
+    }
+
+    .timetable td {
+      background-color: #444;
+    }
+
+    .train-selector {
+      margin-bottom: 10px;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      color: white;
+      width: 200px;
+      text-align: center;
+    }
+
+    .train-selector label {
+      margin-right: 10px;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .train-selector select {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel">
+      <div class="section">
+        <h2>IEDR Crew Controls</h2>
+        <button class="button yellow">IEDR Cover Open</button>
+        <button class="button gray">Enable Override</button>
+        <button class="button red">Cancel Override</button>
+        <button class="button red">IEDR Activated</button>
+      </div>
+
+      <div class="section">
+        <h2>Passenger Doors</h2>
+        <button class="button green" id="doorOpen">Door Open</button>
+        <button class="button red" id="doorClose">Door Close</button>
+        <button class="button gray" id="doil" disabled>DOIL</button>
+        <button class="button bell" id="bell">Bell</button>
+      </div>
+
+      <div class="section">
+        <button class="button transparent">ASDO Bypass</button>
+        <button class="button emergency-brake">Emergency Brake</button>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="clock" id="clock">--:--</div>
+      <div class="passenger-counter">
+        <h2>Remaining Passengers</h2>
+        <div class="count" id="passengerCount">0</div>
+      </div>
+
+      <div class="train-selector">
+        <label for="trainSelect">Select Train:</label>
+        <select id="trainSelect">
+          <option value="">-- Select a Train --</option>
+        </select>
+      </div>
+
+      <div class="timetable">
+        <h2>Timetable</h2>
+        <table id="timetableTable">
+          <thead>
+            <tr>
+              <th>Stop</th>
+              <th>Arrival</th>
+              <th>Departure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Stops will be populated here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.min.js"></script>
+  <script>
+    // Create the Paho MQTT client
+    const client = new Paho.Client("192.168.0.2",8083, "clientId_" + Math.random().toString(16).substr(2, 8));
+    console.log("Starting");
+    // Connect to the broker
+    client.connect({
+      onSuccess: function() {
+        console.log("Connected to MQTT broker");
+        // Subscribe to the current time topic
+        client.subscribe("trains/jmri/memory/currentTime");
+      },
+      onFailure: function(error) {
+        console.error("Failed to connect to MQTT broker:", error);
+      },
+      useSSL: false, 
+    });
+
+    // Handle incoming messages
+    client.onMessageArrived = function(message) {
+      const currentTime = message.payloadString;
+      document.getElementById("clock").textContent = currentTime;
+    };
+  </script>
+
+<script>
+  const trainSelect = document.getElementById("trainSelect");
+  const timetableTable = document.getElementById("timetableTable").querySelector("tbody");
+
+  // Fetch available trains and populate the dropdown
+  async function fetchTrains() {
+    const trains = await fetch('http://192.168.0.2:1880/train') // Replace with a valid API endpoint
+      .then(response => response.json())
+      .catch(err => console.error('Error fetching trains:', err));
+
+    // Check if trainIds exists and has items
+    if (trains && trains.trainIds && trains.trainIds.length) {
+      // Populate dropdown with trainIds
+      trainSelect.innerHTML = trains.trainIds
+        .map(trainId => `<option value="${trainId}">${trainId}</option>`)
+        .join('');
+
+      // Retrieve stored trainId from localStorage (if it exists)
+      const storedTrainId = localStorage.getItem('selectedTrainId');
+      if (storedTrainId) {
+        // If stored, select the train and load its timetable
+        trainSelect.value = storedTrainId;
+        fetchTimetable(storedTrainId);  // Fetch timetable for the stored train
+      } else if (trains.trainIds.length > 0) {
+        // If no stored train, select the first one and load its timetable
+        trainSelect.value = trains.trainIds[0];
+        fetchTimetable(trains.trainIds[0]);  // Fetch timetable for the first train
+      }
+
+    } else {
+      console.error("No trains found or invalid response format.");
+    }
+  }
+
+  // Fetch timetable for the selected train
+  async function fetchTimetable(trainId) {
+    const stops = await fetch(`http://192.168.0.2:1880/train/${trainId}`) // Replace with a valid API endpoint
+      .then(response => response.json())
+      .catch(err => console.error('Error fetching timetable:', err));
+
+    // Check if the response contains the timetable data
+    if (stops && stops.timetable && stops.timetable.length) {
+      timetableTable.innerHTML = stops.timetable
+        .map(
+          stop => `
+            <tr>
+              <td>${stop['Stop Name']}</td>
+              <td>${stop['Arrival Time'] || 'N/A'}</td>
+              <td>${stop['Departure Time'] || 'N/A'}</td>
+            </tr>
+          `
+        )
+        .join('');
+    } else {
+      timetableTable.innerHTML = '<tr><td colspan="3">Unable to load timetable</td></tr>';
+    }
+  }
+
+  // Store the selected trainId in localStorage when the user changes the selection
+  trainSelect.addEventListener('change', function () {
+    const selectedTrain = this.value;
+    if (selectedTrain) {
+      localStorage.setItem('selectedTrainId', selectedTrain);  // Store the selected trainId in localStorage
+      fetchTimetable(selectedTrain);  // Fetch timetable for the selected train
+    } else {
+      timetableTable.innerHTML = '<tr><td colspan="3">No train selected</td></tr>';
+    }
+  });
+
+  // Call fetchTrains when the page loads
+  window.onload = function () {
+    fetchTrains();
+  }
+</script>
+
+
+<script>
+  const doorOpenButton = document.getElementById("doorOpen");
+  const doorCloseButton = document.getElementById("doorClose");
+  const doilButton = document.getElementById("doil");
+  const bellButton = document.getElementById("bell");
+  const passengerCountDisplay = document.getElementById("passengerCount");
+
+  let countdownInterval;
+
+  doorOpenButton.addEventListener("click", () => {
+    momentaryEffect(doorOpenButton);
+
+    setTimeout(() => {
+      doilButton.classList.add("white");
+    }, 3000);
+
+    setTimeout(() => {
+      startPassengerCountdown();
+    }, 4000); // Start countdown after 4 seconds
+  });
+
+  doorCloseButton.addEventListener("click", () => {
+    momentaryEffect(doorCloseButton);
+
+    setTimeout(() => {
+      doilButton.classList.remove("white");
+    }, 3000);
+  });
+
+  bellButton.addEventListener("click", () => {
+    momentaryEffect(bellButton);
+  });
+
+  function momentaryEffect(button) {
+    button.style.opacity = "0.5";
+    setTimeout(() => {
+      button.style.opacity = "1";
+    }, 300);
+  }
+
+  function startPassengerCountdown() {
+    if (countdownInterval) clearInterval(countdownInterval);
+
+    const initialCount = Math.floor(Math.random() * 75) + 1; // Random number between 1 and 75
+    passengerCountDisplay.textContent = initialCount;
+
+    let currentCount = initialCount;
+    const totalDuration = Math.random() * 30000 + 30000; // Min 30s, max 60s
+    const stepInterval = totalDuration / currentCount;
+
+    countdownInterval = setInterval(() => {
+      const decrement = Math.min(
+        currentCount,
+        Math.floor(Math.random() * 10) + 1 // Random decrement 1–10
+      );
+      currentCount -= decrement;
+
+      if (currentCount <= 0) {
+        currentCount = 0;
+        clearInterval(countdownInterval);
+      }
+
+      passengerCountDisplay.textContent = currentCount;
+    }, stepInterval);
+  }
+</script>
+</body>
+</html>

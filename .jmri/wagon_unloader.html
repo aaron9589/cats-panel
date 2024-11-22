@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freight Car Unloader - Animated</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #cars-container {
+            position: relative;
+            margin: 50px auto;
+            max-width: 400px;
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .freight-car {
+            width: 300px;
+            height: 120px;
+            background-color: #e9d132;
+            border: 2px solid #e9d132;
+            margin-bottom: 20px;
+            position: relative;
+            border-radius: 5px 5px 10px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.5s;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .hopper-bottom {
+            position: absolute;
+            bottom: -20px;
+            left: 50px;
+            width: 200px;
+            height: 20px;
+            background-color: #48382c;
+            clip-path: polygon(0% 0%, 10% 100%, 90% 100%, 100% 0%);
+        }
+        
+        .freight-car.unloading {
+            transform: rotateX(30deg);
+        }
+        
+        .content {
+            padding: 10px;
+            background-color: #F5DEB3;
+            margin: 10px;
+            border-radius: 3px;
+            height: calc(100% - 40px);
+            overflow-y: auto;
+            word-wrap: break-word;
+            font-size: 14px;
+            color: #333;
+            position: relative;
+            transition: height 0.5s;
+        }
+        
+        .content.emptying {
+            height: 20px;
+        }
+        
+        .bogie-container {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .bogie {
+            width: 80px;
+            height: 15px;
+            background-color: #333;
+            border-radius: 5px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4px;
+        }
+        
+        .wheel {
+            width: 15px;
+            height: 15px;
+            background-color: #666;
+            border-radius: 50%;
+            border: 2px solid #222;
+            position: absolute;
+            bottom: -7px;
+        }
+        
+        .wheel:first-child {
+            left: 5px;
+        }
+        
+        .wheel:last-child {
+            right: 5px;
+        }
+        
+        #track {
+            height: 8px;
+            background-color: #666;
+            margin: 20px auto;
+            max-width: 400px;
+            border-radius: 4px;
+        }
+        
+        #controls {
+            margin: 20px;
+            text-align: center;
+        }
+        
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3d8b40;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        #message {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            min-height: 20px;
+            color: #666;
+        }
+
+        .error { color: #d32f2f; }
+        .success { color: #388e3c; }
+        .connecting { color: #f57c00; }
+
+        #connectionStatus {
+            text-align: center;
+            margin: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="connectionStatus">Connecting to MQTT broker...</div>
+
+    <div id="cars-container">
+        <div class="freight-car" id="freightCar">
+            <div class="content" id="cargoContent">
+                Waiting for cargo data...
+            </div>
+            <div class="hopper-bottom"></div>
+            <div class="bogie-container">
+                <div class="bogie">
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                </div>
+                <div class="bogie">
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="track"></div>
+
+    <div id="controls">
+        <button id="unloadButton" onclick="unloadCargo()" disabled>Unload</button>
+        <button onclick="resetCargo()">Reset</button>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.min.js"></script>
+    <script>
+        let mqttClient = null;
+        let isConnected = false;
+        const MQTT_TOPIC = "trains/cargo/Shoalhaven Starches/Flour Dump Road/data";
+        let reconnectAttempts = 0;
+        const MAX_RECONNECT_ATTEMPTS = 3;
+
+        // Random delay function
+        function getRandomDelay(min = 1000, max = 3000) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Unloading animation
+        function startUnloadingAnimation() {
+            const freightCar = document.getElementById('freightCar');
+            const cargoContent = document.getElementById('cargoContent');
+            
+            // Tilt the car
+            freightCar.classList.add('unloading');
+            cargoContent.classList.add('emptying');
+        }
+
+        function resetUnloadingAnimation() {
+            const freightCar = document.getElementById('freightCar');
+            const cargoContent = document.getElementById('cargoContent');
+            
+            // Reset the car
+            freightCar.classList.remove('unloading');
+            cargoContent.classList.remove('emptying');
+        }
+
+        function initializeMQTT() {
+            try {
+                mqttClient = new Paho.Client(
+                    "192.168.0.2",  // Your MQTT broker address
+                    8083,        // WebSocket port (default for Mosquitto WS)
+                    "web_client_" + Math.random().toString(16).substr(2, 8)
+                );
+
+                mqttClient.onConnectionLost = onConnectionLost;
+                mqttClient.onMessageArrived = onMessageArrived;
+
+                connectToBroker();
+            } catch (error) {
+                showMessage("Failed to initialize MQTT client: " + error.message, "error");
+            }
+        }
+
+        function connectToBroker() {
+            showMessage("Connecting to MQTT broker...", "connecting");
+            document.getElementById('connectionStatus').innerText = "Connecting...";
+
+            const connectOptions = {
+                useSSL: false,
+                timeout: 3,
+                onSuccess: onConnect,
+                onFailure: onConnectFailure
+            };
+
+            try {
+                mqttClient.connect(connectOptions);
+            } catch (error) {
+                handleConnectionError(error);
+            }
+        }
+
+        function onConnect() {
+            isConnected = true;
+            reconnectAttempts = 0;
+            document.getElementById('unloadButton').disabled = false;
+            document.getElementById('connectionStatus').innerText = "Connected";
+            showMessage("Connected to MQTT broker", "success");
+
+            try {
+                mqttClient.subscribe(MQTT_TOPIC);
+            } catch (error) {
+                showMessage("Failed to subscribe to topic: " + error.message, "error");
+            }
+        }
+
+        function onConnectFailure(error) {
+            handleConnectionError(error);
+        }
+
+        function handleConnectionError(error) {
+            reconnectAttempts++;
+            const errorMsg = `Connection failed: ${error.errorMessage || error.message || "Unknown error"}`;
+            showMessage(errorMsg, "error");
+            document.getElementById('connectionStatus').innerText = "Disconnected";
+            document.getElementById('unloadButton').disabled = true;
+
+            if (reconnectAttempts < MAX_RECONNECT_ATTEMPTS) {
+                showMessage(`Retrying connection (attempt ${reconnectAttempts}/${MAX_RECONNECT_ATTEMPTS})...`, "connecting");
+                setTimeout(connectToBroker, 5000);
+            } else {
+                showMessage("Max reconnection attempts reached. Please refresh the page.", "error");
+            }
+        }
+
+        function onConnectionLost(responseObject) {
+            isConnected = false;
+            document.getElementById('unloadButton').disabled = true;
+            document.getElementById('connectionStatus').innerText = "Disconnected";
+            
+            if (responseObject.errorCode !== 0) {
+                handleConnectionError(responseObject);
+            }
+        }
+
+        function onMessageArrived(message) {
+            try {
+                const content = message.payloadString.trim();
+                document.getElementById('cargoContent').innerText = content || "Wagon Empty";
+                document.getElementById('unloadButton').disabled = !content;
+            } catch (error) {
+                showMessage("Error processing message: " + error.message, "error");
+            }
+        }
+
+        function unloadCargo() {
+            if (!isConnected) {
+                showMessage("Not connected to MQTT broker", "error");
+                return;
+            }
+
+            // Disable unload button during process
+            const unloadButton = document.getElementById('unloadButton');
+            unloadButton.disabled = true;
+
+            // Start unloading animation
+            startUnloadingAnimation();
+
+            // Random delay before sending clear message
+            const delay = getRandomDelay();
+            showMessage(`Unloading...`, "connecting");
+
+            setTimeout(() => {
+                try {
+                    const message = new Paho.Message("");
+                    message.destinationName = MQTT_TOPIC;
+                    mqttClient.send(message);
+                    
+                    document.getElementById('cargoContent').innerText = "Flour unloaded";
+                    showMessage("Flour unloaded successfully", "success");
+                } catch (error) {
+                    showMessage("Failed to unload cargo: " + error.message, "error");
+                }
+
+                // Reset animation and re-enable button after a short delay
+                setTimeout(() => {
+                    resetUnloadingAnimation();
+                   //unloadButton.disabled = false;
+                }, 1000);
+            }, delay);
+        }
+
+        function resetCargo() {
+            document.getElementById('cargoContent').innerText = "Waiting for wagon data...";
+            document.getElementById('unloadButton').disabled = true;
+            resetUnloadingAnimation();
+            showMessage("System reset", "success");
+        }
+
+        function showMessage(text, type = "") {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerText = text;
+            messageDiv.className = type;
+            
+            if (type !== "error") {
+                setTimeout(() => {
+                    messageDiv.innerText = '';
+                    messageDiv.className = '';
+                }, 3000);
+            }
+        }
+
+        // Initialize on page load
+        window.onload = initializeMQTT;
+    </script>
+
+</body>
+</html>
