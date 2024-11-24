@@ -194,6 +194,7 @@
   </style>
 </head>
 <body>
+  <audio id="bellSound" src="bell.mp3" preload="auto"></audio>
   <div class="container">
     <div class="panel">
       <div class="section">
@@ -279,35 +280,35 @@
   const trainSelect = document.getElementById("trainSelect");
   const timetableTable = document.getElementById("timetableTable").querySelector("tbody");
 
+  let trainIdToTypeMap = {}; // Object to map trainId to trainType for quick lookup
+  const doorOpenSound = document.getElementById("doorOpenSound");
+  const doorCloseSound = document.getElementById("doorCloseSound");
+
   // Fetch available trains and populate the dropdown
   async function fetchTrains() {
-    const trains = await fetch('http://192.168.0.2:1880/train') // Replace with a valid API endpoint
-      .then(response => response.json())
-      .catch(err => console.error('Error fetching trains:', err));
+  const trains = await fetch('http://192.168.0.2:1880/train') // Replace with a valid API endpoint
+    .then(response => response.json())
+    .catch(err => console.error('Error fetching trains:', err));
 
-    // Check if trainIds exists and has items
-    if (trains && trains.trainIds && trains.trainIds.length) {
-      // Populate dropdown with trainIds
-      trainSelect.innerHTML = trains.trainIds
-        .map(trainId => `<option value="${trainId}">${trainId}</option>`)
-        .join('');
+  if (trains && trains.trainIds && trains.trainIds.length) {
+    // Populate dropdown with trainIds and store trainId-to-trainType mapping
+    trainSelect.innerHTML = trains.trainIds
+      .map(train => {
+        trainIdToTypeMap[train.id] = train.trainType; // Map trainId to trainType
+        return `<option value="${train.id}">${train.id}</option>`;
+      })
+      .join('');
 
-      // Retrieve stored trainId from localStorage (if it exists)
-      const storedTrainId = localStorage.getItem('selectedTrainId');
-      if (storedTrainId) {
-        // If stored, select the train and load its timetable
-        trainSelect.value = storedTrainId;
-        fetchTimetable(storedTrainId);  // Fetch timetable for the stored train
-      } else if (trains.trainIds.length > 0) {
-        // If no stored train, select the first one and load its timetable
-        trainSelect.value = trains.trainIds[0];
-        fetchTimetable(trains.trainIds[0]);  // Fetch timetable for the first train
-      }
-
-    } else {
-      console.error("No trains found or invalid response format.");
+    // Automatically load timetable for the first train
+    if (trains.trainIds.length > 0) {
+      const firstTrain = trains.trainIds[0];
+      trainSelect.value = firstTrain.id;
+      fetchTimetable(firstTrain.id);
     }
+  } else {
+    console.error("No trains found or invalid response format.");
   }
+}
 
   // Fetch timetable for the selected train
   async function fetchTimetable(trainId) {
@@ -344,6 +345,52 @@
     }
   });
 
+
+
+  // Play a sound based on trainId's trainType
+function playSoundForTrain(trainId, action) {
+  const trainType = trainIdToTypeMap[trainId]; // Get trainType for the selected trainId
+  if (!trainType) {
+    console.warn(`No trainType found for trainId: ${trainId}`);
+    return;
+  }
+
+  const audio = new Audio();
+  switch (trainType) {
+    case "S":
+      audio.src = action === "open" ? "S-door-open.mp3" : "S-door-close.mp3";
+      break;
+    case "T":
+      audio.src = action === "open" ? "T-door-open.mp3" : "T-door-close.mp3";
+      break;
+    default:
+      console.warn("No specific sound defined for train type:", trainType);
+      return;
+  }
+
+  audio.play();
+}
+
+
+// Event listener for "Door Open" button
+document.getElementById("doorOpen").addEventListener("click", function () {
+  const selectedTrainId = trainSelect.value;
+  playSoundForTrain(selectedTrainId, "open");
+});
+
+// Event listener for "Door Close" button
+document.getElementById("doorClose").addEventListener("click", function () {
+  const selectedTrainId = trainSelect.value;
+  playSoundForTrain(selectedTrainId, "close");
+});
+
+document.getElementById("bell").addEventListener("click", function () {
+
+// Play the "Bell" sound
+bellSound.currentTime = 0;
+bellSound.play();
+});
+
   // Call fetchTrains when the page loads
   window.onload = function () {
     fetchTrains();
@@ -377,7 +424,7 @@
 
     setTimeout(() => {
       doilButton.classList.remove("white");
-    }, 3000);
+    }, 8000);
   });
 
   bellButton.addEventListener("click", () => {
